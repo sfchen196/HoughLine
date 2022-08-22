@@ -1,0 +1,12 @@
+# roi: [404, 488, 500, 1400] # ../cowling/data_cam3_to_cam5/0_screwing_position.bmp
+roi: [755, 661, 400, 1000] # ../cowling/data_cam3_to_cam5/0_with_cowling.bmp
+Gaussian_filter_size: 7
+Threshold_params: 
+  - 100
+  - 255
+Canny_params:
+  - 80
+  - 200
+Contour_params: 0
+  # 0: use thresholding image as input of cv::findContour()
+  # 1: use edge image as input of cv::findCotour()

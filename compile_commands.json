@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/sfchen/git/opencv_example",
+  "command": "/usr/bin/c++  -Dhough_lines_EXPORTS -isystem /usr/local/include/opencv4 -isystem /usr/include/eigen3  -fPIC   -fopenmp -std=gnu++11 -o CMakeFiles/hough_lines.dir/hough_lines.cpp.o -c /home/sfchen/git/opencv_example/hough_lines.cpp",
+  "file": "/home/sfchen/git/opencv_example/hough_lines.cpp"
+},
+{
+  "directory": "/home/sfchen/git/opencv_example",
+  "command": "/usr/bin/c++   -isystem /usr/local/include/opencv4 -isystem /usr/include/eigen3    -fopenmp -std=gnu++11 -o CMakeFiles/main.dir/main.cpp.o -c /home/sfchen/git/opencv_example/main.cpp",
+  "file": "/home/sfchen/git/opencv_example/main.cpp"
+}
+]
