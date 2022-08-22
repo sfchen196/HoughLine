@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/sfchen/git/opencv_example/hough_lines.h
+/home/sfchen/git/hough-line/hough_lines.h
 chrono
 -
 iostream
@@ -20,9 +20,9 @@ opencv4/opencv2/opencv.hpp
 vector
 -
 
-/home/sfchen/git/opencv_example/main.cpp
+/home/sfchen/git/hough-line/main.cpp
 yaml-cpp/yaml.h
 -
 hough_lines.h
-/home/sfchen/git/opencv_example/hough_lines.h
+/home/sfchen/git/hough-line/hough_lines.h
 

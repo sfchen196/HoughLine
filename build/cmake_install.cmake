@@ -1,4 +1,4 @@
-# Install script for directory: /home/sfchen/git/opencv_example
+# Install script for directory: /home/sfchen/git/hough-line
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sfchen/git/opencv_example/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sfchen/git/hough-line/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

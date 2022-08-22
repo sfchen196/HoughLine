@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sfchen/git/opencv_example/main.cpp" "/home/sfchen/git/opencv_example/build/CMakeFiles/main.dir/main.cpp.o"
+  "/home/sfchen/git/hough-line/main.cpp" "/home/sfchen/git/hough-line/build/CMakeFiles/main.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,7 +16,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/sfchen/git/opencv_example/build/CMakeFiles/hough_lines.dir/DependInfo.cmake"
+  "/home/sfchen/git/hough-line/build/CMakeFiles/hough_lines.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

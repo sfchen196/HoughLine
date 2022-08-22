@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sfchen/git/opencv_example/hough_lines.cpp" "/home/sfchen/git/opencv_example/build/CMakeFiles/hough_lines.dir/hough_lines.cpp.o"
+  "/home/sfchen/git/hough-line/hough_lines.cpp" "/home/sfchen/git/hough-line/build/CMakeFiles/hough_lines.dir/hough_lines.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
