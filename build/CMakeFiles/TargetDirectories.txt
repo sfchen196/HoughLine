@@ -1,4 +1,0 @@
-/home/sfchen/git/hough-line/build/CMakeFiles/rebuild_cache.dir
-/home/sfchen/git/hough-line/build/CMakeFiles/edit_cache.dir
-/home/sfchen/git/hough-line/build/CMakeFiles/hough_lines.dir
-/home/sfchen/git/hough-line/build/CMakeFiles/main.dir
