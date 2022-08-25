@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
         image = cv::imread(argv[1], 1); //load image in BGR scale
     else
         image = cv::imread("../sudoku.jpeg");
+
     display("image", image, 0.2, 0.2, 1);
 
     /* 1.1 Preprocessing: 
@@ -35,6 +36,7 @@ int main(int argc, char *argv[])
     cv::GaussianBlur(image, image, cv::Size(fs, fs), 0);
     cv::threshold(image, image, config["Threshold_params"][0].as<int>(),
                   config["Threshold_params"][1].as<int>(), cv::THRESH_BINARY);
+ 
     display("threshold", image, 0.2, 0.2, 1);
 
     /* 1.2 select ROI 
@@ -64,6 +66,7 @@ int main(int argc, char *argv[])
     roi_topleft = roi_rect.tl();
 
     cv::Mat imCrop = image(roi_rect);
+
     display("imCrop", imCrop, 0.5, 0.5, 1);
 
     /* 2. find edges
@@ -72,6 +75,7 @@ int main(int argc, char *argv[])
     cv::Mat imCrop_gray;
     cv::cvtColor(imCrop, imCrop_gray, cv::COLOR_BGR2GRAY);
     cv::Canny(imCrop_gray, edge_image, 80, 200);
+
     display("edges", edge_image, 0.5, 0.5, 1);
 
     /* 3.1 find contours based on 1) thresholding image, or 2) edge image
@@ -95,21 +99,17 @@ int main(int argc, char *argv[])
 */
     std::vector<cv::Vec2d> lines_from_edges;
     cv::Vec2d max_line_from_edges;
-    // std::vector<std::vector<cv::Point>> lines_from_edges;
-    // std::vector<cv::Point> max_line_from_edges;
-    features::hough_line(edge_image, lines_from_edges, max_line_from_edges, 1, CV_PI / 180, config["HoughLine_params_edges"].as<int>(), 0, CV_PI);
+
+    features::HoughLines(edge_image, lines_from_edges, max_line_from_edges, 1, CV_PI / 180, config["HoughLine_params_edges"].as<int>(), 0, CV_PI);
 
     std::vector<cv::Vec2d> lines_from_contours;
     cv::Vec2d max_line_from_contours;
-    // std::vector<std::vector<cv::Point>> lines_from_contours;
-    // std::vector<cv::Point> max_line_from_contours;
-    features::hough_line(edge_image, contours[0], lines_from_contours, max_line_from_contours, 1, CV_PI / 180, config["HoughLine_params_contours"].as<int>(), 0, CV_PI);
+    features::HoughLines(contours[0], lines_from_contours, max_line_from_contours, 1, CV_PI / 180, config["HoughLine_params_contours"].as<int>(), 0, CV_PI);
 
     // end timing
     auto t2 = std::chrono::high_resolution_clock::now();
     auto dt_in_ms1 = std::chrono::duration<double>(t2 - t1).count() * 1000;
     std::cout << "Total time: " << dt_in_ms1 << std::endl;
-
 
     //#############################################################################################################################################################
     //######################################################## drawing and display ################################################################################
@@ -117,24 +117,6 @@ int main(int argc, char *argv[])
 
     /* draw contours and contour from maximum area
     */
-
-    cv::RNG rng(12345);
-    cv::Mat drawing = cv::Mat::zeros(imCrop.size(), CV_8UC3);
-    for (size_t i = 1; i < contours.size(); i++)
-    {
-        {
-            cv::Scalar color = cv::Scalar(rng.uniform(0, 256), rng.uniform(0, 256), 0);
-            cv::drawContours(drawing, contours, (int)i, color, 0.5, cv::LINE_8);
-        }
-    }
-
-    // cv::drawContours(drawing, contours, 0, cv::Scalar(0, 0, 255), 1, cv::LINE_8);
-    for (const auto &pt : contours[0])
-        drawing.at<cv::Vec3b>(pt.y, pt.x) = cv::Vec3b(0, 0, 255);
-    display("contours", drawing, 0.5, 0.5, 1);
-
-    /* 4.1 draw lines above thresholds
-*/
     double distance_factor_btw_pts = std::max(imCrop.rows, imCrop.cols);
 
     cv::Mat from_edges;
@@ -146,6 +128,7 @@ int main(int argc, char *argv[])
         std::vector<cv::Point> pts_in_orig = features::reverse_roi(roi_topleft, pts_in_roi);
         cv::line(from_edges, pts_in_orig[0], pts_in_orig[1], cv::Scalar(255, 0, 0), 10);
     }
+
     cv::Mat from_contours;
     image.copyTo(from_contours);
     for (auto &params : lines_from_contours)
@@ -169,7 +152,9 @@ int main(int argc, char *argv[])
 
     // display images
     display("lines_from_edges", from_edges, 0.2, 0.2, 1);
+
     display("lines_from_contours", from_contours, 0.2, 0.2, 0);
+
 
     cv::destroyAllWindows();
 }
