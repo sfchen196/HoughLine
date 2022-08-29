@@ -22,5 +22,10 @@ target_include_directories(hough_lines PUBLIC ${OpenCV_INCLUDE_DIRS} )
 
 add_executable(main main.cpp)
 target_link_libraries(main hough_lines yaml-cpp)
+
+add_executable(example_cowling example_code/example_with_cowling_images.cpp)
+target_link_libraries(example_cowling hough_lines yaml-cpp)
+add_executable(example example_code/example_with_example_images.cpp)
+target_link_libraries(example hough_lines yaml-cpp)
 # target_link_libraries(main ${OpenCV_LIBS} Eigen3::Eigen OpenMP::OpenMP_CXX)
 # target_include_directories(main PUBLIC ${OpenCV_INCLUDE_DIRS} )

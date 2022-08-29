@@ -45,23 +45,10 @@ int main(int argc, char *argv[])
     cv::Point roi_topleft; //used later for mapping the pts in roi to the original image
 
     auto node = config["roi"];
-    if (node.IsSequence() && node[0].IsSequence())
-    {
-        std::vector<std::vector<int>> roi = node.as<std::vector<std::vector<int>>>();
 
-        std::vector<cv::Point2i> pts;
-
-        std::for_each(roi.begin(), roi.end(), [&](std::vector<int> &vec)
-                      { pts.push_back(cv::Point2i(vec[0], vec[1])); });
-
-        roi_rect = cv::boundingRect(pts);
-    }
-    else if (node.IsSequence())
-    {
-
-        std::vector<int> roi = node.as<std::vector<int>>();
-        roi_rect = cv::Rect(roi[0], roi[1], roi[2], roi[3]);
-    }
+    std::vector<int> roi = node.as<std::vector<int>>();
+    roi_rect = cv::Rect(roi[0], roi[1], roi[2], roi[3]);
+    
 
     roi_topleft = roi_rect.tl();
 
@@ -100,11 +87,13 @@ int main(int argc, char *argv[])
     std::vector<cv::Vec2d> lines_from_edges;
     cv::Vec2d max_line_from_edges;
 
-    features::HoughLines(edge_image, lines_from_edges, max_line_from_edges, 1, CV_PI / 180, config["HoughLine_params_edges"].as<int>(), 0, CV_PI);
+    // features::HoughLines(edge_image, lines_from_edges, max_line_from_edges, 1, CV_PI / 180, config["HoughLine_params_edges"].as<int>(), -1/5*CV_PI, 1/5*CV_PI);
+
+    features::HoughLines(edge_image, lines_from_edges, max_line_from_edges, 1, CV_PI / 180, config["HoughLine_params_edges"].as<int>(), -0.6*CV_PI, -0.4*CV_PI);
 
     std::vector<cv::Vec2d> lines_from_contours;
     cv::Vec2d max_line_from_contours;
-    features::HoughLines(contours[0], lines_from_contours, max_line_from_contours, 1, CV_PI / 180, config["HoughLine_params_contours"].as<int>(), 0, CV_PI);
+    features::HoughLines(contours[0], lines_from_contours, max_line_from_contours, 1, CV_PI / 180, config["HoughLine_params_contours"].as<int>(), -0.5*CV_PI, 0.5*CV_PI);
 
     // end timing
     auto t2 = std::chrono::high_resolution_clock::now();
@@ -126,6 +115,7 @@ int main(int argc, char *argv[])
     {
         std::vector<cv::Point> pts_in_roi = features::polarLine2cartPoints(params[0], params[1], distance_factor_btw_pts);
         std::vector<cv::Point> pts_in_orig = features::reverse_roi(roi_topleft, pts_in_roi);
+        std::cout << "rho: " << params[0] << " theta: " << params[1];
         cv::line(from_edges, pts_in_orig[0], pts_in_orig[1], cv::Scalar(255, 0, 0), 10);
     }
 
@@ -135,6 +125,7 @@ int main(int argc, char *argv[])
     {
         std::vector<cv::Point> pts_in_roi = features::polarLine2cartPoints(params[0], params[1], distance_factor_btw_pts);
         std::vector<cv::Point> pts_in_orig = features::reverse_roi(roi_topleft, pts_in_roi);
+        std::cout << "rho: " << params[0] << " theta: " << params[1];
         cv::line(from_contours, pts_in_orig[0], pts_in_orig[1], cv::Scalar(255, 0, 0), 10);
     }
 

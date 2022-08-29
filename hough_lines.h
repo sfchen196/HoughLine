@@ -7,6 +7,26 @@
 
 namespace features
 {
+
+    /**
+     * @brief
+     * @param image – 8-bit, single-channel binary source image. The image may be modified by the function.
+     * @param lines – Output vector of lines. Each line is represented by a 2-element vector, theta and rho.
+     * @param max_line – The line with the highest votes. If multiple lines have the same highest vote, only the first one encountered is chosen.
+     * @param d_rho – Distance resolution of the accumulator in pixels.
+     * @param d_theta – Angle resolution of the accumulator in radians.
+     * @param threshold – Accumulator threshold parameter. Only those lines are returned that get enough votes
+     * @param min_theta – Minimum angle to check for lines. Must falls between 0 and max_theta.
+     * @param max_theta – Maximum angle to check for lines. Must fall between min_theta and CV_PI.
+     * @return void
+    */
+
+    /**
+     * improvement vs cv::HoughLines(): 
+     * 1. allows angles to take arbitrary values, positive or negative
+     * 2. is there a need for sorting output lines by votes? runtime?
+     * 3. can take inputs as image (e.g. edge image from cv::Canny) or as STL vector of points (e.g. contour points from cv::findContours)
+    */
     template <typename Margin>
     auto HoughLines_input(Margin &margin, std::vector<cv::Point> &OUT_margin_pts, int &OUT_max_x, int &OUT_max_y) -> void
     {
@@ -58,17 +78,15 @@ namespace features
         /* given the step size [d_theta], NO. of different values of theta [n_theta] should be enough to cover the range between
         the minimum theta and the maximum theta */
         int n_theta = (int)ceil((max_theta - min_theta) / d_theta);
-
         /* 4. prepare the accumulator matrix, initialized as zeros */
         cv::Mat A = cv::Mat::zeros(n_rho, n_theta, CV_16UC1);
 
-        /* 5. construct the vector of different angles ranging from 0 to pi radians */
+        /* 5. construct the vector of different angles ranging from min_theta to max_theta */
         double angles[n_theta];
         for (int i = 0; i < n_theta; i++)
         {
             angles[i] = i * d_theta + min_theta;
         }
-
         /* 6. loop thru each edge pixel and increment the corresponding entries in the accumulator matrix
         by calculating the formula for each line passing thru the pixel at each of the angles */
         for (const auto &pt : OUT_margin_pts)
@@ -112,50 +130,7 @@ namespace features
         }
     }
 
-    // /**
-    //  * @brief
-    //  * @param image – 8-bit, single-channel binary source image. The image may be modified by the function.
-    //  * @param lines – Output vector of lines. Each line is represented by a 2-element vector, theta and rho.
-    //  * @param max_line – The line with the highest votes. If multiple lines have the same highest vote, only the first one encountered is chosen.
-    //  * @param d_rho – Distance resolution of the accumulator in pixels.
-    //  * @param d_theta – Angle resolution of the accumulator in radians.
-    //  * @param threshold – Accumulator threshold parameter. Only those lines are returned that get enough votes
-    //  * @param min_theta – Minimum angle to check for lines. Must falls between 0 and max_theta.
-    //  * @param max_theta – Maximum angle to check for lines. Must fall between min_theta and CV_PI.
-    //  * @return void
-    // */
-    // auto hough_line(cv::Mat &image,
-    //                 std::vector<cv::Vec2d> &lines,
-    //                 cv::Vec2d &max_line,
-    //                 double d_rho = 1,
-    //                 double d_theta = CV_PI / 180,
-    //                 int threshold = 100,
-    //                 double min_theta = 0,
-    //                 double max_theta = CV_PI) -> void;
 
-    // /**
-    //  * @brief
-    //  * @param image – 8-bit, single-channel binary source image. The image may be modified by the function.
-    //  *
-    //  * @param edge_locations_vec – A STL library vector of cv::Point objects, can be the output of cv::findContours()
-    //  * @param lines – Output vector of lines. Each line is represented by a 2-element vector, theta and rho.
-    //  * @param max_line – The line with the highest votes. If multiple lines have the same highest vote, only the first one encountered is chosen.
-    //  * @param d_rho – Distance resolution of the accumulator in pixels.
-    //  * @param d_theta – Angle resolution of the accumulator in radians.
-    //  * @param threshold – Accumulator threshold parameter. Only those lines are returned that get enough votes
-    //  * @param min_theta – Minimum angle to check for lines. Must fall between 0 and max_theta.
-    //  * @param max_theta – Maximum angle to check for lines. Must fall between min_theta and CV_PI.
-    //  * @return void
-    // */
-    // auto hough_line(cv::Mat &image,
-    //                 std::vector<cv::Point2i> &edge_locations_vec,
-    //                 std::vector<cv::Vec2d> &lines,
-    //                 cv::Vec2d &max_line,
-    //                 double d_rho,
-    //                 double d_theta,
-    //                 int threshold,
-    //                 double min_theta = 0,
-    //                 double max_theta = CV_PI) -> void;
 
     /**
      * @brief

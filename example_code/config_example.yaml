@@ -1,0 +1,19 @@
+Gaussian_params: 7  # filter size
+Threshold_params: 
+  - 250             # threshold
+  - 255             # maxval
+Canny_params:
+  - 80              # lower bound
+  - 200             # upper bound
+
+
+
+HoughLine_params: 
+  d_rho: 1          # 1 pixel
+  d_theta: 0.01745  # 1 degree in radians
+  threshold: 100    # threshold for HoughLine() function call 
+  min_theta: 0      # lower bound of theta range  
+  max_theta: 3.14   # upper bound of theta range
+
+
+
