@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     auto t1 = std::chrono::high_resolution_clock::now();
 
     // 0.0 load function parameters
-    YAML::Node config = YAML::LoadFile("../config.yaml");
+    YAML::Node config = YAML::LoadFile("config.yaml");
 
     /* 0.1 load image
 */
@@ -114,7 +114,7 @@ int main(int argc, char *argv[])
     for (auto &params : lines_from_edges)
     {
         std::vector<cv::Point> pts_in_roi = features::polarLine2cartPoints(params[0], params[1], distance_factor_btw_pts);
-        std::vector<cv::Point> pts_in_orig = features::reverse_roi(roi_topleft, pts_in_roi);
+        std::vector<cv::Point> pts_in_orig = features::reverseROI(roi_topleft, pts_in_roi);
         std::cout << "rho: " << params[0] << " theta: " << params[1];
         cv::line(from_edges, pts_in_orig[0], pts_in_orig[1], cv::Scalar(255, 0, 0), 10);
     }
@@ -124,19 +124,19 @@ int main(int argc, char *argv[])
     for (auto &params : lines_from_contours)
     {
         std::vector<cv::Point> pts_in_roi = features::polarLine2cartPoints(params[0], params[1], distance_factor_btw_pts);
-        std::vector<cv::Point> pts_in_orig = features::reverse_roi(roi_topleft, pts_in_roi);
+        std::vector<cv::Point> pts_in_orig = features::reverseROI(roi_topleft, pts_in_roi);
         std::cout << "rho: " << params[0] << " theta: " << params[1];
         cv::line(from_contours, pts_in_orig[0], pts_in_orig[1], cv::Scalar(255, 0, 0), 10);
     }
 
     /* 4.2 draw the line from highest votes
 */
-    std::vector<cv::Point> pts_from_edges = features::reverse_roi(roi_topleft, features::polarLine2cartPoints(max_line_from_edges[0], max_line_from_edges[1], distance_factor_btw_pts));
+    std::vector<cv::Point> pts_from_edges = features::reverseROI(roi_topleft, features::polarLine2cartPoints(max_line_from_edges[0], max_line_from_edges[1], distance_factor_btw_pts));
     cv::line(from_edges, pts_from_edges[0], pts_from_edges[1], cv::Scalar(0, 0, 255), 10);
     std::cout << "Line_from_edges of highest votes (red): { rho: " << max_line_from_edges[0] << " theta: "
               << max_line_from_edges[1] << " }" << std::endl;
 
-    std::vector<cv::Point> pts_from_contours = features::reverse_roi(roi_topleft, features::polarLine2cartPoints(max_line_from_contours[0], max_line_from_contours[1], distance_factor_btw_pts));
+    std::vector<cv::Point> pts_from_contours = features::reverseROI(roi_topleft, features::polarLine2cartPoints(max_line_from_contours[0], max_line_from_contours[1], distance_factor_btw_pts));
     cv::line(from_contours, pts_from_contours[0], pts_from_contours[1], cv::Scalar(0, 0, 255), 10);
     std::cout << "Line_from_contours of highest votes (red): { rho: " << max_line_from_contours[0] << " theta: "
               << max_line_from_contours[1] << " }" << std::endl;

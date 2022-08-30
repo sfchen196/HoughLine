@@ -1,10 +1,9 @@
 
 flag: 0             # 1 for edges, 0 for contours
 
-roi: [404, 488, 500, 1400] # ../cowling_images/data_cam3_to_cam5/0_screwing_position.bmp
-# roi: [755, 661, 400, 1000] # ../cowling_images/data_cam3_to_cam5/0_with_cowling.bmp
+# roi: [404, 488, 500, 1400] # ../cowling_images/data_cam3_to_cam5/0_screwing_position.bmp
+roi: [755, 661, 400, 1000] # ../cowling_images/data_cam3_to_cam5/0_with_cowling.bmp
 # roi: [734, 626, 1660, 1040] # ../cowling_images/data_cam3_to_cam5/0_without_cowling.bmp
-# roi: [[2072, 979], [1387, 1759], [1759, 2061], [2486, 1233]] # ../cowling_images/data_cam3_to_cam5/0_without_cowling_rotated.bmp
 
 
 Gaussian_params: 7  # filter size
@@ -21,7 +20,7 @@ HoughLine_params:
   d_rho: 1          # 1 pixel
   d_theta: 0.01745  # 1 degree in radians
   threshold: 100    # threshold for HoughLine() function call 
-  min_theta: 0      # lower bound of theta range  
-  max_theta: 3.14   # upper bound of theta range
+  min_theta: -0.1   # lower bound of theta range  
+  max_theta: 0.1    # upper bound of theta range
 
 

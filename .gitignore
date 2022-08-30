@@ -1,5 +1,12 @@
 # build files
-/build
+build/
+CMakeFiles/
+CMake*
+*.cmake
+*.so
+Makefile
+
+!CMakeLists.txt
 
 # vscode specific
 .vscode
