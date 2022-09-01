@@ -14,39 +14,39 @@ namespace features
      *                          Can be an 8-bit, single-channel binary source image (e.g. cv::Canny() output), or a vector of points (e.g. cv::findContours() output)
      * @param lines         – Output vector of lines. Each line is represented by a 2-element vector, theta and rho.
      * @param max_line      – The line with the highest votes. If multiple lines have the same highest vote, only the first one encountered is chosen.
-     * @param d_rho         – Distance resolution of the accumulator in pixels.
-     * @param d_theta       – Angle resolution of the accumulator in radians.
+     * @param d_rho         – Distance resolution of the accumulator in pixels. Must be positive.
+     * @param d_theta       – Angle resolution of the accumulator in radians. Must be positive.
      * @param threshold     – Accumulator threshold parameter. Only those lines are returned that get enough votes
      * @param min_theta     – Minimum angle to check for lines. Both positive and negative values are allowed.
-     * @param max_theta     – Maximum angle to check for lines. Both positive and negative values are allowed.  0 < MAX_THETA - MIN_THETA  <= CV_PI
+     * @param max_theta     – Maximum angle to check for lines. Both positive and negative values are allowed.  
      * @return void
      **/
 
 
     template <typename Margin>
-    auto HoughLines_input(Margin &margin, std::vector<cv::Point> &OUT_margin_pts, int &OUT_max_x, int &OUT_max_y) -> void
+    auto input(Margin &margin, std::vector<cv::Point> &OUT_margin_pts, int &OUT_max_x, int &OUT_max_y) -> void
     {
         // some error messages
     }
     template <>
-    auto HoughLines_input<cv::Mat>(cv::Mat &margin, std::vector<cv::Point> &OUT_margin_pts, int &OUT_max_x, int &OUT_max_y) -> void
+    auto input<cv::Mat>(cv::Mat &margin, std::vector<cv::Point> &OUT_margin_pts, int &OUT_max_x, int &OUT_max_y) -> void
     {
         /* extract x,y coordinates of the "edge pixels" */
         for (int i = 0; i < margin.rows; i++)
         {
             for (int j = 0; j < margin.cols; j++)
             {
-                if (margin.at<uchar>(i, j) == 255)
+                if (margin.at<uchar>(i, j) > 0)
                 {
                     OUT_margin_pts.push_back(cv::Point2i(j, i));
                 }
             }
         }
-        OUT_max_x = margin.cols;
-        OUT_max_y = margin.rows;
+        OUT_max_x = margin.cols-1;
+        OUT_max_y = margin.rows-1;
     }
     template <>
-    auto HoughLines_input<std::vector<cv::Point>>(std::vector<cv::Point> &margin, std::vector<cv::Point> &OUT_margin_pts, int &OUT_max_x, int &OUT_max_y) -> void
+    auto input<std::vector<cv::Point>>(std::vector<cv::Point> &margin, std::vector<cv::Point> &OUT_margin_pts, int &OUT_max_x, int &OUT_max_y) -> void
     {
         OUT_margin_pts = margin;
 
@@ -63,7 +63,7 @@ namespace features
      * 
      * 
      **/
-    auto prepareAccumulatorMatrix(int max_x, int max_y, double d_rho, double d_theta, double min_theta, double max_theta) -> std::pair<int, int>;
+    auto prepareAccumulatorMatrix(int max_x, int max_y, double d_rho, double min_theta, double max_theta, double d_theta) -> std::pair<int, int>;
     /**
      * 
      * 
@@ -92,9 +92,9 @@ namespace features
     {
         std::vector<cv::Point> margin_pts;
         int max_x, max_y;
-        HoughLines_input(margin, margin_pts, max_x, max_y);
+        input(margin, margin_pts, max_x, max_y);
 
-        const auto [n_rho, n_theta] = prepareAccumulatorMatrix(max_x, max_y, d_rho, d_theta, min_theta, max_theta);
+        const auto [n_rho, n_theta] = prepareAccumulatorMatrix(max_x, max_y, d_rho, min_theta, max_theta, d_theta);
 
         /* 4. prepare the accumulator matrix, initialized as zeros */
         cv::Mat A = cv::Mat::zeros(n_rho, n_theta, CV_16UC1);
@@ -119,3 +119,7 @@ namespace features
      **/
     auto reverseROI(const cv::Point &roi_topleft, const std::vector<cv::Point> &points) -> std::vector<cv::Point>;
 }
+
+
+
+

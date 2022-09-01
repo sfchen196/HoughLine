@@ -1,16 +1,21 @@
 #include "hough_lines.h"
 namespace features
 {
-    auto prepareAccumulatorMatrix(int max_x, int max_y, double d_rho, double d_theta, double min_theta, double max_theta) -> std::pair<int, int>
+    auto prepareAccumulatorMatrix(int max_x, int max_y, double d_rho, double min_theta, double max_theta, double d_theta) -> std::pair<int, int>
     {
+        assert(d_rho > 0);
+        assert(d_theta > 0);
+        assert(max_x >= 0);
+        assert(max_theta >= min_theta);
+
         /* given the step size [d_rho], No. of different values of rho [n_rho] should be enough to cover *DOUBLE* 
             the longest distance in the image, which is the diagonal length
                     *DOUBLE*: to accomodate negative rho values */
-        int n_rho = (int)2 * ceil(sqrt(pow(max_x, 2) + pow(max_y, 2)) / d_rho);
+        int n_rho = (int) (2 * ceil( sqrt( pow(max_x, 2) + pow(max_y, 2) ) / d_rho ) + 1);
 
         /* given the step size [d_theta], NO. of different values of theta [n_theta] should be enough to cover the range between
              the minimum theta and the maximum theta */
-        int n_theta = (int)ceil((max_theta - min_theta) / d_theta);
+        int n_theta = (int) ( ceil( (max_theta - min_theta) / d_theta ) + 1 );
         return std::pair<int, int>{n_rho, n_theta};
     }
 
