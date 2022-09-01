@@ -4,6 +4,7 @@
 #include <opencv4/opencv2/core.hpp>
 #include <opencv4/opencv2/opencv.hpp>
 #include <vector>
+#include <stdexcept>
 
 namespace features
 {
@@ -18,7 +19,7 @@ namespace features
      * @param d_theta       – Angle resolution of the accumulator in radians. Must be positive.
      * @param threshold     – Accumulator threshold parameter. Only those lines are returned that get enough votes
      * @param min_theta     – Minimum angle to check for lines. Both positive and negative values are allowed.
-     * @param max_theta     – Maximum angle to check for lines. Both positive and negative values are allowed.  
+     * @param max_theta     – Maximum angle to check for lines. Both positive and negative values are allowed. MAX_THETA >= MIN_THETA 
      * @return void
      **/
 
@@ -26,7 +27,7 @@ namespace features
     template <typename Margin>
     auto input(Margin &margin, std::vector<cv::Point> &OUT_margin_pts, int &OUT_max_x, int &OUT_max_y) -> void
     {
-        // some error messages
+        throw std::invalid_argument("Invalid argument: Input argument MARGIN should be an instance of cv::Mat or std::vector<cv::Point>");
     }
     template <>
     auto input<cv::Mat>(cv::Mat &margin, std::vector<cv::Point> &OUT_margin_pts, int &OUT_max_x, int &OUT_max_y) -> void
@@ -58,25 +59,10 @@ namespace features
                         ->y;
     }
 
-    /**
-     * 
-     * 
-     * 
-     **/
     auto prepareAccumulatorMatrix(int max_x, int max_y, double d_rho, double min_theta, double max_theta, double d_theta) -> std::pair<int, int>;
-    /**
-     * 
-     * 
-     * 
-     **/
+
     auto accumulate(std::vector<cv::Point> &margin_pts, double *angles, int n_theta, cv::Mat &A, double d_rho, int n_rho) -> void; 
-    /**
-     * 
-     * 
-     * 
-     * 
-     * 
-     **/
+
     auto extractLines(cv::Mat &A, std::vector<cv::Vec2d> &OUT_lines, cv::Vec2d &OUT_best_line, int threshold, double d_rho, int n_rho, double d_theta, double min_theta) -> void;
 
     /**

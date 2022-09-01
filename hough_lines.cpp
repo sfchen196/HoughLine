@@ -5,7 +5,6 @@ namespace features
     {
         assert(d_rho > 0);
         assert(d_theta > 0);
-        assert(max_x >= 0);
         assert(max_theta >= min_theta);
 
         /* given the step size [d_rho], No. of different values of rho [n_rho] should be enough to cover *DOUBLE* 

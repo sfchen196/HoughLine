@@ -80,6 +80,24 @@ TEST_F(InputTest, points_as_input)
     EXPECT_EQ(max_y, 4) << "max_y is not 4";
 }
 
+TEST_F(InputTest, invalid_input)
+{
+    bool caught = false;
+    try
+    {
+        std::vector<cv::Vec2d> vecs;
+        std::vector<cv::Point> pts;
+        int max_x = 0, max_y = 0;
+        features::input(vecs, pts, max_x, max_y);
+    }
+    catch (const std::exception &e)
+    {
+        caught = true;
+        ASSERT_TRUE(caught) << "invalid_argument exception not caught";
+        std::cerr << e.what() << '\n';
+    }
+}
+
 int main(int argc, char **argv)
 {
     ::testing::InitGoogleTest(&argc, argv);
