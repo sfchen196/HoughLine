@@ -11,11 +11,12 @@ find_package(OpenMP REQUIRED)
 
 include_directories(${GTEST_INCLUDE_DIRS})
 
+add_library(utils SHARED ../utils.cpp)
+target_link_libraries(utils PUBLIC ${OpenCV_LIBS} OpenMP::OpenMP_CXX)
+target_include_directories(utils PUBLIC ${OpenCV_INCLUDE_DIRS} )
 
 add_library(hough_lines SHARED ../hough_lines.cpp)
-target_link_libraries(hough_lines PUBLIC ${OpenCV_LIBS} OpenMP::OpenMP_CXX)
-target_include_directories(hough_lines PUBLIC ${OpenCV_INCLUDE_DIRS} )
-
+target_link_libraries(hough_lines PUBLIC utils)
 
 add_executable(InputTests InputTests.cpp)
 target_link_libraries(InputTests PUBLIC hough_lines yaml-cpp ${GTEST_LIBRARIES} pthread)

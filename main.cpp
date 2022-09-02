@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     auto t1 = std::chrono::high_resolution_clock::now();
 
     // 0.0 load function parameters
-    YAML::Node config = YAML::LoadFile("config.yaml");
+    YAML::Node config = YAML::LoadFile("../config.yaml");
 
     /* 0.1 load image
 */

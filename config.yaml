@@ -1,14 +1,6 @@
-# roi can take inputs in 2 forms:
-  # 1) a vector of 4 integers for axis-aligned rectangular roi: 
-    ## [0]: x-coordinate of roi's top-left corner; [1]: y-coordinate of the corner; [2]: width of roi; [3]: height of roi
-
-  # 2) a vector of >3 interger pairs for tilted roi: 
-    ## each integer pair corresponds to the x- and y- coordinates of a point on the edge of the roi
-
 # roi: [404, 488, 500, 1400] # ../cowling_images/data_cam3_to_cam5/0_screwing_position.bmp
 roi: [755, 661, 400, 1000] # ../cowling_images/data_cam3_to_cam5/0_with_cowling.bmp
 # roi: [734, 626, 1660, 1040] # ../cowling_images/data_cam3_to_cam5/0_without_cowling.bmp
-# roi: [[2072, 979], [1387, 1759], [1759, 2061], [2486, 1233]] # ../cowling_images/data_cam3_to_cam5/0_without_cowling_rotated.bmp
 
 
 Gaussian_params: 7 # filter size

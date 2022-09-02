@@ -6,18 +6,18 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS On)
 
 
 find_package(OpenCV REQUIRED)
-find_package(Eigen3 REQUIRED NO_MODULE)
+# find_package(Eigen3 REQUIRED NO_MODULE)
 find_package(OpenMP REQUIRED)
 
 message(${OpenCV_LIBS})
 message(${OpenCV_INCLUDE_DIRS})
 
-
-
+add_library(utils SHARED utils.cpp)
+target_link_libraries(utils PUBLIC ${OpenCV_LIBS} OpenMP::OpenMP_CXX)
+target_include_directories(utils PUBLIC ${OpenCV_INCLUDE_DIRS})
 
 add_library(hough_lines SHARED hough_lines.cpp)
-target_link_libraries(hough_lines PUBLIC ${OpenCV_LIBS} Eigen3::Eigen OpenMP::OpenMP_CXX)
-target_include_directories(hough_lines PUBLIC ${OpenCV_INCLUDE_DIRS} )
+target_link_libraries(hough_lines PUBLIC utils)
 
 
 add_executable(main main.cpp)
