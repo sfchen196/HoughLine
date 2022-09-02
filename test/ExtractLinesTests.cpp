@@ -1,4 +1,4 @@
-#include "../hough_lines.h"
+#include "../utils.cpp"
 #include <gtest/gtest.h>
 
 class AccumulateTest : public ::testing::Test
@@ -39,7 +39,7 @@ TEST_F(AccumulateTest, single_theta_value)
     actual_lines.push_back(cv::Vec2d(2, 0));
     actual_best_line = cv::Vec2d(2, 0);
 
-    features::extractLines(A, OUT_lines, OUT_best_line, threshold, d_rho, n_rho, d_theta, min_theta);
+    utils::extractLines(A, OUT_lines, OUT_best_line, threshold, d_rho, n_rho, d_theta, min_theta);
 
     std::sort(OUT_lines.begin(), OUT_lines.end(), [](const cv::Vec2d &lhs, const cv::Vec2d &rhs)
               {
@@ -84,7 +84,7 @@ TEST_F(AccumulateTest, handles_negative_rho_values)
 
     actual_best_line = cv::Vec2d(2, 0);
 
-    features::extractLines(A, OUT_lines, OUT_best_line, threshold, d_rho, n_rho, d_theta, min_theta);
+    utils::extractLines(A, OUT_lines, OUT_best_line, threshold, d_rho, n_rho, d_theta, min_theta);
 
     std::sort(OUT_lines.begin(), OUT_lines.end(), [](const cv::Vec2d &lhs, const cv::Vec2d &rhs)
               {
@@ -128,7 +128,7 @@ TEST_F(AccumulateTest, handles_decimal_drho_values)
     actual_best_line = cv::Vec2d(-1.5, -CV_PI / 4);
 
  
-    features::extractLines(A, OUT_lines, OUT_best_line, threshold, d_rho, n_rho, d_theta, min_theta);
+    utils::extractLines(A, OUT_lines, OUT_best_line, threshold, d_rho, n_rho, d_theta, min_theta);
 
     std::sort(OUT_lines.begin(), OUT_lines.end(), [](const cv::Vec2d &lhs, const cv::Vec2d &rhs)
               {

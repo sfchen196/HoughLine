@@ -1,4 +1,4 @@
-#include "../hough_lines.h"
+#include "../utils.cpp"
 #include <gtest/gtest.h>
 
 class InputTest : public ::testing::Test
@@ -31,7 +31,7 @@ TEST_F(InputTest, image_as_input)
 {
     std::vector<cv::Point> pts;
     int max_x = 0, max_y = 0;
-    features::input<cv::Mat>(img, pts, max_x, max_y);
+    utils::input<cv::Mat>(img, pts, max_x, max_y);
     std::sort(pts.begin(), pts.end(), [](const cv::Point &lhs, const cv::Point &rhs)
               {
                   if (lhs.y != rhs.y)
@@ -58,7 +58,7 @@ TEST_F(InputTest, points_as_input)
 {
     std::vector<cv::Point> pts;
     int max_x = 0, max_y = 0;
-    features::input<std::vector<cv::Point>>(actual_pts, pts, max_x, max_y);
+    utils::input<std::vector<cv::Point>>(actual_pts, pts, max_x, max_y);
     std::sort(pts.begin(), pts.end(), [](const cv::Point &lhs, const cv::Point &rhs)
               {
                   if (lhs.y != rhs.y)
@@ -88,7 +88,7 @@ TEST_F(InputTest, invalid_input)
         std::vector<cv::Vec2d> vecs;
         std::vector<cv::Point> pts;
         int max_x = 0, max_y = 0;
-        features::input(vecs, pts, max_x, max_y);
+        utils::input(vecs, pts, max_x, max_y);
     }
     catch (const std::exception &e)
     {

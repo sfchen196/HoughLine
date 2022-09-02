@@ -1,4 +1,4 @@
-#include "../hough_lines.h"
+#include "../utils.cpp"
 #include <gtest/gtest.h>
 
 class AccumulateTest : public ::testing::Test
@@ -20,7 +20,7 @@ protected:
         margin.push_back(cv::Point(2, 2));
         margin.push_back(cv::Point(2, 3));
         margin.push_back(cv::Point(2, 4));
-    }
+    }   
 
     void TearDown() override
     {
@@ -33,7 +33,7 @@ TEST_F(AccumulateTest, single_theta_value)
     double angles[1] = {0};
     double d_rho = 1;
     cv::Mat A = cv::Mat::zeros(n_rho, n_theta, CV_16UC1);
-    features::accumulate(margin, angles, n_theta, A, d_rho, n_rho);
+    utils::accumulate(margin, angles, n_theta, A, d_rho, n_rho);
     cv::Mat B = cv::Mat::zeros(n_rho, n_theta, CV_16UC1);
     B.at<uint16_t>(7, 0) = 5;
     B.forEach<uint16_t>([&](uint16_t &pixel, const int *position) -> void {
@@ -47,7 +47,7 @@ TEST_F(AccumulateTest, two_theta_values)
     double angles[2] = {0, -CV_PI/2};
     double d_rho = 1;
     cv::Mat A = cv::Mat::zeros(n_rho, n_theta, CV_16UC1);
-    features::accumulate(margin, angles, n_theta, A, d_rho, n_rho);
+    utils::accumulate(margin, angles, n_theta, A, d_rho, n_rho);
     cv::Mat B = cv::Mat::zeros(n_rho, n_theta, CV_16UC1);
     B.at<uint16_t>(7, 0) = 5;
     B.at<uint16_t>(5, 1) = 1;
@@ -66,7 +66,7 @@ TEST_F(AccumulateTest, handles_decimal_drho_values)
     double angles[1] = {-CV_PI/4};
     double d_rho = 0.5;
     cv::Mat A = cv::Mat::zeros(n_rho, n_theta, CV_16UC1);
-    features::accumulate(margin, angles, n_theta, A, d_rho, n_rho);
+    utils::accumulate(margin, angles, n_theta, A, d_rho, n_rho);
     cv::Mat B = cv::Mat::zeros(n_rho, n_theta, CV_16UC1);
     B.at<uint16_t>(12, 0) = 1;
     B.at<uint16_t>(10, 0) = 1;
