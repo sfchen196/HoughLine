@@ -1,11 +1,48 @@
-#include "utils.h"
+#include <iostream>
+#include <omp.h>
+#include <opencv2/opencv.hpp>
+#include <vector>
+
 namespace utils
 {
+    template <typename Margin>
+    auto input(Margin &margin, std::vector<cv::Point> &OUT_margin_pts, int &OUT_max_x, int &OUT_max_y) -> void
+    {
+        throw std::invalid_argument("Invalid argument: Input argument MARGIN should be an instance of cv::Mat or std::vector<cv::Point>");
+    }
+    template <>
+    auto input<cv::Mat>(cv::Mat &margin, std::vector<cv::Point> &OUT_margin_pts, int &OUT_max_x, int &OUT_max_y) -> void
+    {
+        /* extract x,y coordinates of the "edge pixels" */
+        for (int i = 0; i < margin.rows; i++)
+        {
+            for (int j = 0; j < margin.cols; j++)
+            {
+                if (margin.at<uchar>(i, j) > 0)
+                {
+                    OUT_margin_pts.push_back(cv::Point2i(j, i));
+                }
+            }
+        }
+        OUT_max_x = margin.cols - 1;
+        OUT_max_y = margin.rows - 1;
+    }
+    template <>
+    auto input<std::vector<cv::Point>>(std::vector<cv::Point> &margin, std::vector<cv::Point> &OUT_margin_pts, int &OUT_max_x, int &OUT_max_y) -> void
+    {
+        OUT_margin_pts = margin;
+
+        OUT_max_x = std::max_element(OUT_margin_pts.begin(), OUT_margin_pts.end(), [](cv::Point a, cv::Point b)
+                                     { return a.x < b.x; })
+                        ->x;
+        OUT_max_y = std::max_element(OUT_margin_pts.begin(), OUT_margin_pts.end(), [](cv::Point a, cv::Point b)
+                                     { return a.y < b.y; })
+                        ->y;
+    }
     auto prepareAccumulatorMatrix(int max_x, int max_y, double d_rho, double min_theta, double max_theta, double d_theta) -> std::pair<int, int>
     {
         assert(d_rho > 0);
         assert(d_theta > 0);
-
         assert(max_theta >= min_theta);
 
         /* given the step size [d_rho], No. of different values of rho [n_rho] should be enough to cover *DOUBLE* 

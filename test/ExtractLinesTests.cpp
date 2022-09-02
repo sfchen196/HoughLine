@@ -1,4 +1,4 @@
-#include "../hough_lines.h"
+#include "../utils.cpp"
 #include <gtest/gtest.h>
 
 class AccumulateTest : public ::testing::Test

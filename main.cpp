@@ -9,22 +9,26 @@ static void display(const std::string &name, const cv::Mat &img, double fx = 1, 
     cv::imshow(name, img_vis);
     cv::waitKey(delay);
 }
+void printHelp(std::string program_name);
 
 int main(int argc, char *argv[])
 {
     // start timing
     auto t1 = std::chrono::high_resolution_clock::now();
+    if (argc < 3)
+    {
+        printHelp(argv[0]);
+        return -1;
+    }
 
-    // 0.0 load function parameters
-    YAML::Node config = YAML::LoadFile("../config.yaml");
+    const auto [img_str, yaml_config] = [&]()
+    {
+        return std::make_tuple(argv[1], argv[2]);
+    }();
 
-    /* 0.1 load image
-*/
-    cv::Mat image;
-    if (argc > 1)
-        image = cv::imread(argv[1], 1); //load image in BGR scale
-    else
-        image = cv::imread("../sudoku.jpeg");
+    const auto image = cv::imread(img_str);
+    const auto config = YAML::LoadFile(yaml_config);
+ 
 
     display("image", image, 0.2, 0.2, 1);
 
@@ -36,7 +40,7 @@ int main(int argc, char *argv[])
     cv::GaussianBlur(image, image, cv::Size(fs, fs), 0);
     cv::threshold(image, image, config["Threshold_params"][0].as<int>(),
                   config["Threshold_params"][1].as<int>(), cv::THRESH_BINARY);
- 
+
     display("threshold", image, 0.2, 0.2, 1);
 
     /* 1.2 select ROI 
@@ -48,7 +52,6 @@ int main(int argc, char *argv[])
 
     std::vector<int> roi = node.as<std::vector<int>>();
     roi_rect = cv::Rect(roi[0], roi[1], roi[2], roi[3]);
-    
 
     roi_topleft = roi_rect.tl();
 
@@ -89,11 +92,11 @@ int main(int argc, char *argv[])
 
     // features::HoughLines(edge_image, lines_from_edges, max_line_from_edges, 1, CV_PI / 180, config["HoughLine_params_edges"].as<int>(), -1/5*CV_PI, 1/5*CV_PI);
 
-    features::HoughLines(edge_image, lines_from_edges, max_line_from_edges, 1, CV_PI / 180, config["HoughLine_params_edges"].as<int>(), -0.6*CV_PI, -0.4*CV_PI);
+    features::HoughLines(edge_image, lines_from_edges, max_line_from_edges, 1, CV_PI / 180, config["HoughLine_params_edges"].as<int>(), -0.6 * CV_PI, -0.4 * CV_PI);
 
     std::vector<cv::Vec2d> lines_from_contours;
     cv::Vec2d max_line_from_contours;
-    features::HoughLines(contours[0], lines_from_contours, max_line_from_contours, 1, CV_PI / 180, config["HoughLine_params_contours"].as<int>(), -0.5*CV_PI, 0.5*CV_PI);
+    features::HoughLines(contours[0], lines_from_contours, max_line_from_contours, 1, CV_PI / 180, config["HoughLine_params_contours"].as<int>(), -0.5 * CV_PI, 0.5 * CV_PI);
 
     // end timing
     auto t2 = std::chrono::high_resolution_clock::now();
@@ -146,6 +149,11 @@ int main(int argc, char *argv[])
 
     display("lines_from_contours", from_contours, 0.2, 0.2, 0);
 
-
     cv::destroyAllWindows();
+}
+
+void printHelp(std::string program_name)
+{
+    std::cout << "ERROR: Could not parse input arguments.\n";
+    std::cout << program_name << " <image> <yaml_config> \n";
 }

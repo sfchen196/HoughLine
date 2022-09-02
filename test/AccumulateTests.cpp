@@ -1,4 +1,4 @@
-#include "../hough_lines.h"
+#include "../utils.cpp"
 #include <gtest/gtest.h>
 
 class AccumulateTest : public ::testing::Test
@@ -20,7 +20,7 @@ protected:
         margin.push_back(cv::Point(2, 2));
         margin.push_back(cv::Point(2, 3));
         margin.push_back(cv::Point(2, 4));
-    }
+    }   
 
     void TearDown() override
     {
