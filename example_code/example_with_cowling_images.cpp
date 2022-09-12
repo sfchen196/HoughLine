@@ -40,8 +40,8 @@ int main(int argc, char *argv[])
     {
         cv::Canny(imCrop_gray, edge_image, config["Canny_params"][0].as<double>(), config["Canny_params"][0].as<double>());
         features::HoughLines(edge_image, lines_from_edges, max_line_from_edges, config["HoughLine_params"]["d_rho"].as<double>(),
-                             config["HoughLine_params"]["d_theta"].as<double>(), config["HoughLine_params"]["threshold"].as<int>(),
-                             config["HoughLine_params"]["min_theta"].as<double>(), config["HoughLine_params"]["max_theta"].as<double>());
+                             config["HoughLine_params"]["d_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["threshold"].as<int>(),
+                             config["HoughLine_params"]["min_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["max_theta"].as<double>() / 180 * CV_PI);
     }
     else
     {

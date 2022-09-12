@@ -36,8 +36,8 @@ int main(int argc, char *argv[])
     std::vector<cv::Vec2d> OUT_lines;
     cv::Vec2d OUT_max_line;
     features::HoughLines(edge_image, OUT_lines, OUT_max_line, config["HoughLine_params"]["d_rho"].as<double>(),
-                         config["HoughLine_params"]["d_theta"].as<double>(), config["HoughLine_params"]["threshold"].as<int>(),
-                         config["HoughLine_params"]["min_theta"].as<double>(), config["HoughLine_params"]["max_theta"].as<double>());
+                         config["HoughLine_params"]["d_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["threshold"].as<int>(),
+                         config["HoughLine_params"]["min_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["max_theta"].as<double>() / 180 * CV_PI);
 
     // end timing
     auto t2 = std::chrono::high_resolution_clock::now();

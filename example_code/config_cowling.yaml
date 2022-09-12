@@ -18,9 +18,9 @@ Canny_params:
 
 HoughLine_params: 
   d_rho: 1          # 1 pixel
-  d_theta: 0.01745  # 1 degree in radians
+  d_theta: 1        # in degrees, not in radians
   threshold: 100    # threshold for HoughLine() function call 
-  min_theta: -0.1   # lower bound of theta range  
-  max_theta: 0.1    # upper bound of theta range
+  min_theta: -1     # in degrees, not in radian
+  max_theta: 1      # in degrees, not in radian
 
 

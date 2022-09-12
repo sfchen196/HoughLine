@@ -16,10 +16,6 @@ add_library(utils SHARED ../utils.cpp)
 target_link_libraries(utils PUBLIC ${OpenCV_LIBS} OpenMP::OpenMP_CXX)
 target_include_directories(utils PUBLIC ${OpenCV_INCLUDE_DIRS} )
 
-add_library(utils SHARED ../utils.cpp)
-target_link_libraries(utils PUBLIC ${OpenCV_LIBS} OpenMP::OpenMP_CXX)
-target_include_directories(utils PUBLIC ${OpenCV_INCLUDE_DIRS})
-
 add_library(hough_lines SHARED ../hough_lines.cpp)
 target_link_libraries(hough_lines PRIVATE utils)
 
