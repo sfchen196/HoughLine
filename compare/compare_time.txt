@@ -1,0 +1,450 @@
+-----------------------
+angle: 0
+Total time - cv: 8.17005
+Total time - cvP: 1.16411
+Total time - feat: 6.12453
+-----------------------
+angle: 1
+Total time - cv: 23.2132
+Total time - cvP: 1.89555
+Total time - feat: 2.70524
+-----------------------
+angle: 2
+Total time - cv: 41.9982
+Total time - cvP: 0.959232
+Total time - feat: 2.2244
+-----------------------
+angle: 3
+Total time - cv: 17.5978
+Total time - cvP: 1.01906
+Total time - feat: 7.84971
+-----------------------
+angle: 4
+Total time - cv: 26.3279
+Total time - cvP: 2.0814
+Total time - feat: 2.3881
+-----------------------
+angle: 5
+Total time - cv: 25.5728
+Total time - cvP: 1.93267
+Total time - feat: 2.77678
+-----------------------
+angle: 6
+Total time - cv: 38.1253
+Total time - cvP: 1.8231
+Total time - feat: 9.35484
+-----------------------
+angle: 7
+Total time - cv: 42.9064
+Total time - cvP: 1.06004
+Total time - feat: 2.21645
+-----------------------
+angle: 8
+Total time - cv: 48.2702
+Total time - cvP: 2.44483
+Total time - feat: 3.69184
+-----------------------
+angle: 9
+Total time - cv: 28.6449
+Total time - cvP: 1.30232
+Total time - feat: 2.21505
+-----------------------
+angle: 10
+Total time - cv: 16.5339
+Total time - cvP: 2.11872
+Total time - feat: 60.4513
+-----------------------
+angle: 11
+Total time - cv: 34.2375
+Total time - cvP: 1.23735
+Total time - feat: 2.50256
+-----------------------
+angle: 12
+Total time - cv: 18.1548
+Total time - cvP: 1.29531
+Total time - feat: 4.9369
+-----------------------
+angle: 13
+Total time - cv: 20.5376
+Total time - cvP: 1.78794
+Total time - feat: 3.93342
+-----------------------
+angle: 14
+Total time - cv: 42.5471
+Total time - cvP: 2.15236
+Total time - feat: 2.80507
+-----------------------
+angle: 15
+Total time - cv: 24.6052
+Total time - cvP: 2.09226
+Total time - feat: 3.78537
+-----------------------
+angle: 16
+Total time - cv: 16.7947
+Total time - cvP: 1.25461
+Total time - feat: 19.0373
+-----------------------
+angle: 17
+Total time - cv: 21.6343
+Total time - cvP: 1.39602
+Total time - feat: 2.53665
+-----------------------
+angle: 18
+Total time - cv: 17.0518
+Total time - cvP: 1.27727
+Total time - feat: 4.63308
+-----------------------
+angle: 19
+Total time - cv: 19.4763
+Total time - cvP: 1.45555
+Total time - feat: 4.89072
+-----------------------
+angle: 20
+Total time - cv: 18.6952
+Total time - cvP: 1.08436
+Total time - feat: 4.87129
+-----------------------
+angle: 21
+Total time - cv: 19.9746
+Total time - cvP: 1.37594
+Total time - feat: 3.81761
+-----------------------
+angle: 22
+Total time - cv: 63.4596
+Total time - cvP: 2.92474
+Total time - feat: 7.96593
+-----------------------
+angle: 23
+Total time - cv: 61.7324
+Total time - cvP: 4.09469
+Total time - feat: 16.9462
+-----------------------
+angle: 24
+Total time - cv: 65.3425
+Total time - cvP: 5.00024
+Total time - feat: 13.7963
+-----------------------
+angle: 25
+Total time - cv: 65.5344
+Total time - cvP: 4.44597
+Total time - feat: 9.79111
+-----------------------
+angle: 26
+Total time - cv: 64.4484
+Total time - cvP: 5.10946
+Total time - feat: 9.89962
+-----------------------
+angle: 27
+Total time - cv: 63.9191
+Total time - cvP: 4.6597
+Total time - feat: 6.90022
+-----------------------
+angle: 28
+Total time - cv: 74.8714
+Total time - cvP: 4.01346
+Total time - feat: 6.27134
+-----------------------
+angle: 29
+Total time - cv: 74.5263
+Total time - cvP: 2.88465
+Total time - feat: 5.06551
+-----------------------
+angle: 30
+Total time - cv: 71.6867
+Total time - cvP: 3.43175
+Total time - feat: 6.53172
+-----------------------
+angle: 31
+Total time - cv: 73.0269
+Total time - cvP: 4.56297
+Total time - feat: 7.16087
+-----------------------
+angle: 32
+Total time - cv: 72.5152
+Total time - cvP: 2.76995
+Total time - feat: 5.81755
+-----------------------
+angle: 33
+Total time - cv: 75.3277
+Total time - cvP: 2.8724
+Total time - feat: 5.88719
+-----------------------
+angle: 34
+Total time - cv: 79.1153
+Total time - cvP: 2.22471
+Total time - feat: 4.66684
+-----------------------
+angle: 35
+Total time - cv: 78.7982
+Total time - cvP: 2.16382
+Total time - feat: 4.34589
+-----------------------
+angle: 36
+Total time - cv: 23.7147
+Total time - cvP: 1.18643
+Total time - feat: 34.2474
+-----------------------
+angle: 37
+Total time - cv: 88.4697
+Total time - cvP: 2.31516
+Total time - feat: 3.8842
+-----------------------
+angle: 38
+Total time - cv: 29.8519
+Total time - cvP: 2.28996
+Total time - feat: 4.61615
+-----------------------
+angle: 39
+Total time - cv: 81.293
+Total time - cvP: 3.03818
+Total time - feat: 19.763
+-----------------------
+angle: 40
+Total time - cv: 81.3784
+Total time - cvP: 3.10376
+Total time - feat: 5.42491
+-----------------------
+angle: 41
+Total time - cv: 81.1795
+Total time - cvP: 2.24746
+Total time - feat: 4.55078
+-----------------------
+angle: 42
+Total time - cv: 25.6775
+Total time - cvP: 1.36414
+Total time - feat: 7.55129
+-----------------------
+angle: 43
+Total time - cv: 25.7657
+Total time - cvP: 1.25166
+Total time - feat: 4.17294
+-----------------------
+angle: 44
+Total time - cv: 21.7457
+Total time - cvP: 1.14832
+Total time - feat: 4.02338
+-----------------------
+angle: 45
+Total time - cv: 34.779
+Total time - cvP: 1.7344
+Total time - feat: 3.59694
+-----------------------
+angle: 46
+Total time - cv: 25.9896
+Total time - cvP: 1.3537
+Total time - feat: 2.92185
+-----------------------
+angle: 47
+Total time - cv: 49.9407
+Total time - cvP: 1.1882
+Total time - feat: 2.68241
+-----------------------
+angle: 48
+Total time - cv: 25.7285
+Total time - cvP: 1.25946
+Total time - feat: 2.61665
+-----------------------
+angle: 49
+Total time - cv: 100.088
+Total time - cvP: 4.90814
+Total time - feat: 7.25915
+-----------------------
+angle: 50
+Total time - cv: 85.481
+Total time - cvP: 2.21971
+Total time - feat: 4.8512
+-----------------------
+angle: 51
+Total time - cv: 86.6694
+Total time - cvP: 2.00605
+Total time - feat: 3.85052
+-----------------------
+angle: 52
+Total time - cv: 32.5997
+Total time - cvP: 2.1052
+Total time - feat: 4.73963
+-----------------------
+angle: 53
+Total time - cv: 32.4355
+Total time - cvP: 2.71048
+Total time - feat: 8.25604
+-----------------------
+angle: 54
+Total time - cv: 73.1954
+Total time - cvP: 2.27566
+Total time - feat: 3.65356
+-----------------------
+angle: 55
+Total time - cv: 25.2749
+Total time - cvP: 1.61941
+Total time - feat: 4.64566
+-----------------------
+angle: 56
+Total time - cv: 76.6445
+Total time - cvP: 3.16925
+Total time - feat: 5.12338
+-----------------------
+angle: 57
+Total time - cv: 19.5371
+Total time - cvP: 1.4491
+Total time - feat: 3.14465
+-----------------------
+angle: 58
+Total time - cv: 20.5426
+Total time - cvP: 1.07608
+Total time - feat: 9.89184
+-----------------------
+angle: 59
+Total time - cv: 67.3638
+Total time - cvP: 2.74397
+Total time - feat: 4.59559
+-----------------------
+angle: 60
+Total time - cv: 74.7178
+Total time - cvP: 3.41897
+Total time - feat: 6.58591
+-----------------------
+angle: 61
+Total time - cv: 71.4767
+Total time - cvP: 4.56125
+Total time - feat: 10.3653
+-----------------------
+angle: 62
+Total time - cv: 74.0901
+Total time - cvP: 4.43546
+Total time - feat: 8.80694
+-----------------------
+angle: 63
+Total time - cv: 73.1404
+Total time - cvP: 4.08982
+Total time - feat: 6.94821
+-----------------------
+angle: 64
+Total time - cv: 68.4482
+Total time - cvP: 4.67984
+Total time - feat: 7.88754
+-----------------------
+angle: 65
+Total time - cv: 70.0229
+Total time - cvP: 4.07792
+Total time - feat: 6.75798
+-----------------------
+angle: 66
+Total time - cv: 70.5747
+Total time - cvP: 4.28625
+Total time - feat: 8.08897
+-----------------------
+angle: 67
+Total time - cv: 51.4677
+Total time - cvP: 2.32574
+Total time - feat: 5.04515
+-----------------------
+angle: 68
+Total time - cv: 20.713
+Total time - cvP: 1.63193
+Total time - feat: 5.8912
+-----------------------
+angle: 69
+Total time - cv: 18.2084
+Total time - cvP: 2.48418
+Total time - feat: 5.88043
+-----------------------
+angle: 70
+Total time - cv: 20.9795
+Total time - cvP: 1.44755
+Total time - feat: 3.23451
+-----------------------
+angle: 71
+Total time - cv: 68.5703
+Total time - cvP: 2.63908
+Total time - feat: 5.29367
+-----------------------
+angle: 72
+Total time - cv: 73.8683
+Total time - cvP: 4.19183
+Total time - feat: 6.45421
+-----------------------
+angle: 73
+Total time - cv: 65.7724
+Total time - cvP: 3.95766
+Total time - feat: 8.41789
+-----------------------
+angle: 74
+Total time - cv: 66.2529
+Total time - cvP: 3.77454
+Total time - feat: 9.25582
+-----------------------
+angle: 75
+Total time - cv: 64.1198
+Total time - cvP: 4.64111
+Total time - feat: 15.6136
+-----------------------
+angle: 76
+Total time - cv: 63.2923
+Total time - cvP: 4.81876
+Total time - feat: 10.3016
+-----------------------
+angle: 77
+Total time - cv: 65.276
+Total time - cvP: 3.90796
+Total time - feat: 7.05114
+-----------------------
+angle: 78
+Total time - cv: 66.6946
+Total time - cvP: 3.36014
+Total time - feat: 5.97954
+-----------------------
+angle: 79
+Total time - cv: 67.6476
+Total time - cvP: 3.13965
+Total time - feat: 4.47822
+-----------------------
+angle: 80
+Total time - cv: 89.4332
+Total time - cvP: 6.8079
+Total time - feat: 45.4769
+-----------------------
+angle: 81
+Total time - cv: 21.8385
+Total time - cvP: 1.73567
+Total time - feat: 2.18619
+-----------------------
+angle: 82
+Total time - cv: 41.5598
+Total time - cvP: 1.40457
+Total time - feat: 4.70017
+-----------------------
+angle: 83
+Total time - cv: 59.4313
+Total time - cvP: 2.67433
+Total time - feat: 3.9508
+-----------------------
+angle: 84
+Total time - cv: 19.071
+Total time - cvP: 1.35077
+Total time - feat: 2.86938
+-----------------------
+angle: 85
+Total time - cv: 30.07
+Total time - cvP: 2.0867
+Total time - feat: 4.42977
+-----------------------
+angle: 86
+Total time - cv: 22.1873
+Total time - cvP: 1.24109
+Total time - feat: 2.65854
+-----------------------
+angle: 87
+Total time - cv: 44.2906
+Total time - cvP: 1.19307
+Total time - feat: 2.60063
+-----------------------
+angle: 88
+Total time - cv: 70.1068
+Total time - cvP: 1.94798
+Total time - feat: 3.85674
+-----------------------
+angle: 89
+Total time - cv: 70.1163
+Total time - cvP: 2.03539
+Total time - feat: 4.34708

@@ -1,0 +1,2240 @@
+                       
+ooooooooooooooooooooooo
+0, 250
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+-0, 250
+fffffffffffffffffffffff
+0, 250
+f_best_line
+0, 250
+                       
+ooooooooooooooooooooooo
+1, 254.325
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+1.03328, 253.959
+-0, 246
+-0, 249
+-0, 252
+-0, 253
+-0, 248
+fffffffffffffffffffffff
+1, 254
+1, 255
+f_best_line
+1, 254
+                       
+ooooooooooooooooooooooo
+2, 258.573
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+-0, 241
+1.97493, 258.846
+fffffffffffffffffffffff
+2, 258
+2, 259
+f_best_line
+2, 259
+                       
+ooooooooooooooooooooooo
+3, 262.741
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+2.98265, 262.644
+fffffffffffffffffffffff
+3, 262
+3, 263
+f_best_line
+3, 263
+                       
+ooooooooooooooooooooooo
+4, 266.83
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+4.01217, 267.343
+-0, 253
+-0, 265
+-0, 247
+-0, 238
+-0, 233
+-0, 237
+-0, 251
+-0, 254
+-0, 259
+-0, 266
+-0, 249
+-0, 242
+-0, 250
+-0, 243
+-0, 263
+-0, 268
+-0, 266
+fffffffffffffffffffffff
+4, 266
+4, 267
+4, 268
+f_best_line
+4, 267
+                       
+ooooooooooooooooooooooo
+5, 270.838
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+5.0391, 270.949
+-0, 244
+-0, 253
+-0, 269
+-0, 234
+-0, 248
+-0, 229
+-0, 246
+-0, 249
+-0, 231
+-0, 232
+-0, 270
+-0, 261
+-0, 230
+-0, 267
+-0, 265
+-0, 247
+-0, 257
+-0, 266
+-0, 235
+-0, 242
+-0, 245
+fffffffffffffffffffffff
+5, 270
+5, 271
+5, 272
+f_best_line
+5, 271
+                       
+ooooooooooooooooooooooo
+6, 274.763
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+5.94923, 274.513
+fffffffffffffffffffffff
+6, 274
+6, 275
+f_best_line
+6, 275
+                       
+ooooooooooooooooooooooo
+7, 278.604
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+6.96951, 278.924
+-0, 246
+-0, 255
+-0, 254
+-0, 257
+-0, 272
+-0, 231
+-0, 262
+-0, 235
+-0, 274
+-0, 253
+-0, 219
+-0, 223
+-0, 241
+-0, 263
+-0, 276
+-0, 221
+fffffffffffffffffffffff
+7, 278
+7, 279
+f_best_line
+7, 279
+                       
+ooooooooooooooooooooooo
+8, 282.36
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+7.98538, 282.237
+-0, 222
+-0, 258
+-0, 233
+-0, 281
+-0, 272
+-0, 217
+-0, 248
+-0, 284
+-0, 216
+-0, 260
+-0, 223
+-0, 285
+-0, 267
+-0, 263
+-0, 250
+-0, 264
+-0, 235
+-0, 249
+-0, 269
+nan, nan
+-0, 226
+-0, 242
+-0, 274
+-0, 239
+-0, 276
+-0, 220
+-0, 275
+-0, 260
+-0, 268
+-0, 229
+-0, 230
+-0, 277
+-0, 279
+-0, 234
+-0, 246
+-0, 271
+-0, 228
+-0, 225
+-0, 246
+-0, 261
+fffffffffffffffffffffff
+8, 282
+8, 283
+f_best_line
+8, 282
+                       
+ooooooooooooooooooooooo
+9, 286.031
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+8.99621, 286.433
+-0, 244
+-0, 231
+-0, 230
+-0, 269
+-0, 275
+-0, 213
+-0, 249
+-0, 258
+-0, 233
+-0, 284
+-0, 220
+-0, 220
+-0, 276
+-0, 250
+-0, 249
+-0, 277
+-0, 228
+-0, 283
+-0, 290
+-0, 225
+-0, 242
+-0, 256
+-0, 211
+-0, 227
+-0, 259
+-0, 252
+-0, 289
+-0, 247
+-0, 262
+-0, 272
+-0, 226
+-0, 257
+-0, 213
+-0, 237
+-0, 215
+-0, 212
+-0, 224
+-0, 246
+-0, 240
+-0, 238
+-0, 258
+-0, 215
+-0, 245
+-0, 279
+-0, 275
+-0, 287
+-0, 269
+-0, 228
+fffffffffffffffffffffff
+9, 285
+9, 286
+9, 287
+f_best_line
+9, 286
+                       
+ooooooooooooooooooooooo
+10, 289.614
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+10.0014, 289.532
+-0, 270
+-0, 252
+-0, 244
+-0, 209
+-0, 236
+-0, 229
+-0, 231
+-0, 271
+-0, 208
+-0, 250
+-0, 276
+-0, 278
+-0, 254
+-0, 264
+-0, 239
+-0, 288
+-0, 277
+-0, 258
+-0, 274
+-0, 260
+-0, 253
+-0, 268
+-0, 247
+-0, 267
+-0, 232
+-0, 256
+-0, 287
+-0, 261
+-0, 223
+-0, 238
+-0, 257
+-0, 251
+-0, 292
+-0, 263
+-0, 291
+fffffffffffffffffffffff
+10, 289
+10, 290
+f_best_line
+10, 290
+                       
+ooooooooooooooooooooooo
+11, 293.109
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+11.0005, 293.506
+-0, 255
+-0, 246
+-0, 234
+-0, 253
+-0, 269
+-0, 254
+-0, 209
+-0, 225
+-0, 257
+-0, 265
+-0, 259
+-0, 295
+-0, 292
+-0, 220
+-0, 203
+-0, 210
+-0, 244
+-0, 252
+-0, 206
+-0, 281
+-0, 266
+-0, 238
+-0, 284
+-0, 297
+fffffffffffffffffffffff
+11, 292
+11, 293
+11, 294
+f_best_line
+11, 293
+                       
+ooooooooooooooooooooooo
+12, 296.515
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+-0, 236
+12.1071, 297.238
+-0, 290
+-0, 200
+-0, 295
+-0, 247
+-0, 271
+-0, 259
+-0, 250
+-0, 241
+7.12502, 297.807
+-0, 272
+9.46232, 281.944
+11.3099, 294.763
+11.3099, 291.625
+11.0409, 291.551
+-0, 254
+-0, 280
+9.46232, 284.903
+-0, 301
+-0, 298
+-0, 265
+-0, 276
+7.12502, 294.458
+-0, 283
+-0, 231
+12.5288, 298.062
+-0, 204
+nan, nan
+-0, 286
+9.46232, 288.52
+9.46232, 296.411
+-0, 235
+fffffffffffffffffffffff
+12, 296
+12, 297
+f_best_line
+12, 297
+                       
+ooooooooooooooooooooooo
+13, 299.83
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+12.9778, 300.133
+-0, 243
+-0, 233
+-0, 242
+8.1301, 298.116
+-0, 247
+8.1301, 270.963
+-0, 259
+-0, 285
+-0, 278
+-0, 197
+-0, 203
+-0, 299
+-0, 277
+8.1301, 293.591
+-0, 287
+-0, 302
+-0, 229
+-0, 266
+-0, 211
+-0, 227
+8.1301, 301.51
+-0, 196
+-0, 272
+-0, 215
+-0, 283
+-0, 230
+-0, 251
+8.1301, 287.934
+-0, 284
+-0, 275
+-0, 260
+-0, 295
+-0, 240
+-0, 290
+-0, 263
+-0, 201
+-0, 198
+-0, 231
+-0, 200
+-0, 212
+-0, 250
+-0, 237
+-0, 236
+-0, 271
+8.1301, 283.408
+-0, 289
+-0, 214
+fffffffffffffffffffffff
+13, 299
+13, 300
+13, 301
+f_best_line
+13, 300
+                       
+ooooooooooooooooooooooo
+14, 303.054
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+13.9552, 302.791
+-0, 207
+-0, 216
+-0, 258
+-0, 245
+-0, 301
+-0, 307
+-0, 302
+-0, 251
+-0, 283
+-0, 305
+-0, 229
+-0, 311
+-0, 246
+-0, 291
+-0, 282
+-0, 263
+-0, 261
+-0, 196
+-0, 195
+-0, 224
+-0, 244
+-0, 241
+-0, 212
+-0, 261
+-0, 282
+-0, 281
+-0, 201
+-0, 308
+-0, 295
+-0, 290
+-0, 253
+-0, 264
+-0, 307
+-0, 296
+-0, 280
+-0, 232
+-0, 242
+-0, 264
+-0, 217
+-0, 247
+-0, 250
+nan, nan
+-0, 220
+-0, 284
+-0, 286
+-0, 287
+-0, 259
+-0, 293
+-0, 290
+-0, 253
+-0, 305
+-0, 243
+-0, 230
+-0, 285
+-0, 248
+-0, 222
+-0, 205
+-0, 227
+-0, 190
+-0, 310
+-0, 197
+-0, 202
+-0, 262
+-0, 206
+nan, nan
+-0, 276
+-0, 234
+-0, 294
+-0, 304
+-0, 200
+-0, 230
+-0, 208
+-0, 255
+-0, 298
+-0, 192
+-0, 193
+-0, 279
+-0, 285
+-0, 291
+-0, 221
+-0, 209
+-0, 234
+-0, 275
+-0, 306
+-0, 209
+-0, 228
+-0, 202
+-0, 252
+-0, 286
+-0, 245
+-0, 266
+-0, 279
+fffffffffffffffffffffff
+14, 302
+14, 303
+14, 304
+f_best_line
+14, 303
+                       
+ooooooooooooooooooooooo
+15, 306.186
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+15.0314, 306.153
+-0, 278
+-0, 308
+-0, 309
+-0, 245
+11.3099, 287.31
+-0, 184
+-0, 316
+-0, 240
+-0, 262
+-0, 281
+-0, 242
+-0, 301
+nan, nan
+-0, 214
+-0, 241
+12.5288, 298.279
+11.3099, 298.489
+-0, 244
+11.3099, 309.667
+-0, 243
+-0, 312
+-0, 286
+-0, 297
+-0, 307
+-0, 268
+-0, 267
+-0, 293
+-0, 204
+-0, 255
+-0, 225
+-0, 260
+11.3099, 282.603
+-0, 289
+-0, 264
+11.3099, 303.196
+-0, 303
+-0, 258
+-0, 198
+-0, 249
+-0, 234
+-0, 283
+-0, 302
+11.3099, 304.961
+-0, 275
+-0, 192
+-0, 186
+11.3099, 279.073
+-0, 205
+-0, 226
+-0, 263
+11.3099, 291.036
+-0, 199
+11.3099, 301.234
+-0, 218
+-0, 233
+-0, 256
+-0, 274
+-0, 215
+9.46232, 265.833
+-0, 211
+11.3099, 294.763
+fffffffffffffffffffffff
+15, 305
+15, 306
+15, 307
+f_best_line
+15, 306
+                       
+ooooooooooooooooooooooo
+16, 309.225
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+15.9909, 308.579
+15.7808, 309.299
+11.3099, 280.838
+15.7672, 308.684
+11.3099, 281.623
+11.3099, 311.04
+16.2602, 309.16
+fffffffffffffffffffffff
+16, 309
+16, 310
+f_best_line
+16, 309
+                       
+ooooooooooooooooooooooo
+17, 312.169
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+17.0462, 311.678
+17.0462, 312.634
+fffffffffffffffffffffff
+17, 311
+17, 312
+17, 313
+f_best_line
+17, 312
+                       
+ooooooooooooooooooooooo
+18, 315.018
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+17.986, 314.825
+-0, 237
+-0, 288
+-0, 317
+-0, 251
+-0, 301
+15.9454, 315.929
+15.9454, 309.885
+-0, 326
+-0, 206
+-0, 198
+-0, 273
+-0, 189
+-0, 266
+15.9454, 300.957
+-0, 238
+15.9454, 299.446
+-0, 241
+-0, 330
+-0, 265
+-0, 218
+-0, 228
+-0, 322
+-0, 244
+-0, 175
+15.9454, 303.979
+fffffffffffffffffffffff
+18, 314
+18, 315
+18, 316
+f_best_line
+18, 315
+                       
+ooooooooooooooooooooooo
+19, 317.772
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+19.0185, 317.659
+-0, 206
+-0, 198
+-0, 268
+-0, 196
+-0, 280
+-0, 179
+-0, 183
+-0, 288
+nan, nan
+nan, nan
+-0, 306
+-0, 307
+-0, 250
+-0, 298
+-0, 233
+-0, 320
+-0, 242
+-0, 191
+-0, 258
+-0, 246
+-0, 174
+-0, 274
+-0, 270
+-0, 255
+-0, 330
+18.4349, 318.125
+-0, 331
+-0, 224
+-0, 291
+-0, 192
+-0, 232
+-0, 166
+-0, 221
+-0, 318
+18.4349, 315.279
+-0, 182
+-0, 217
+-0, 201
+-0, 200
+-0, 273
+-0, 278
+-0, 239
+-0, 181
+-0, 226
+-0, 248
+-0, 309
+-0, 271
+-0, 304
+-0, 197
+-0, 223
+-0, 294
+-0, 231
+18.4349, 313.698
+-0, 204
+-0, 325
+-0, 297
+-0, 222
+-0, 216
+-0, 262
+-0, 205
+fffffffffffffffffffffff
+19, 317
+19, 318
+f_best_line
+19, 318
+                       
+ooooooooooooooooooooooo
+20, 320.428
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+20.0384, 320.357
+18.4349, 311.484
+-0, 312
+-0, 302
+-0, 296
+26.5651, 319.311
+-0, 176
+-0, 231
+-0, 331
+-0, 237
+18.4349, 313.382
+-0, 308
+-0, 211
+18.4349, 316.544
+-0, 181
+18.4349, 316.228
+-0, 185
+18.4349, 319.39
+-0, 324
+18.4349, 323.817
+-0, 306
+18.4349, 314.014
+18.4349, 310.536
+-0, 249
+18.4349, 314.647
+-0, 311
+18.4349, 314.963
+18.4349, 313.065
+-0, 188
+18.4349, 318.125
+-0, 328
+-0, 217
+14.0362, 321.602
+-0, 230
+18.4349, 312.117
+-0, 292
+18.4349, 322.869
+-0, 277
+-0, 341
+18.4349, 319.706
+18.4349, 318.758
+-0, 333
+fffffffffffffffffffffff
+20, 320
+20, 321
+f_best_line
+20, 320
+                       
+ooooooooooooooooooooooo
+21, 322.987
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+20.9451, 323.137
+18.4349, 318.758
+-0, 254
+18.4349, 305.792
+-0, 206
+18.4349, 306.108
+-0, 276
+18.4349, 317.176
+18.4349, 322.869
+-0, 214
+18.4349, 306.741
+18.4349, 310.852
+18.4349, 313.698
+-0, 310
+18.4349, 314.647
+18.4349, 322.552
+-0, 218
+18.4349, 304.844
+-0, 324
+-0, 154
+18.4349, 316.544
+18.4349, 320.022
+18.4349, 314.33
+18.4349, 326.031
+18.4349, 312.749
+18.4349, 325.398
+-0, 319
+18.4349, 325.715
+18.4349, 320.339
+-0, 198
+18.4349, 324.45
+-0, 302
+18.4349, 320.971
+18.4349, 314.014
+-0, 175
+-0, 224
+18.4349, 313.382
+18.4349, 308.322
+18.4349, 315.279
+18.4349, 307.69
+18.4349, 309.903
+fffffffffffffffffffffff
+21, 322
+21, 323
+21, 324
+f_best_line
+21, 323
+                       
+ooooooooooooooooooooooo
+22, 325.448
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+18.4349, 320.655
+21.9564, 325.541
+22.0285, 325.282
+fffffffffffffffffffffff
+22, 325
+22, 326
+f_best_line
+22, 325
+                       
+ooooooooooooooooooooooo
+23, 327.809
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+23.0182, 327.656
+18.4349, 299.151
+18.4349, 321.92
+21.8014, 329.981
+nan, nan
+18.4349, 306.425
+18.4349, 312.749
+-0, 234
+-0, 240
+-0, 178
+nan, nan
+-0, 268
+18.4349, 324.766
+fffffffffffffffffffffff
+23, 327
+23, 328
+23, 329
+f_best_line
+23, 328
+                       
+ooooooooooooooooooooooo
+24, 330.071
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+23.9838, 329.831
+18.4349, 322.869
+-0, 308
+nan, nan
+-0, 211
+nan, nan
+-0, 291
+nan, nan
+-0, 235
+nan, nan
+-0, 272
+nan, nan
+nan, nan
+18.4349, 325.715
+nan, nan
+nan, nan
+18.4349, 312.117
+nan, nan
+18.4349, 341.21
+-0, 344
+-0, 215
+nan, nan
+-0, 336
+nan, nan
+nan, nan
+-0, 267
+18.4349, 297.57
+-0, 295
+18.4349, 293.776
+nan, nan
+18.4349, 338.364
+nan, nan
+-0, 312
+nan, nan
+nan, nan
+-0, 332
+nan, nan
+nan, nan
+nan, nan
+-0, 279
+nan, nan
+nan, nan
+-0, 227
+-0, 226
+-0, 171
+nan, nan
+-0, 354
+nan, nan
+-0, 178
+-0, 338
+nan, nan
+nan, nan
+nan, nan
+18.4349, 294.724
+nan, nan
+nan, nan
+-0, 228
+-0, 283
+-0, 271
+nan, nan
+18.4349, 290.93
+nan, nan
+nan, nan
+nan, nan
+-0, 220
+nan, nan
+-0, 261
+-0, 186
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+-0, 356
+-0, 273
+nan, nan
+nan, nan
+-0, 350
+nan, nan
+nan, nan
+nan, nan
+-0, 297
+nan, nan
+-0, 165
+-0, 145
+-0, 249
+nan, nan
+nan, nan
+18.4349, 312.433
+-0, 333
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+-0, 174
+nan, nan
+nan, nan
+-0, 206
+-0, 190
+nan, nan
+-0, 259
+-0, 172
+-0, 192
+-0, 180
+-0, 289
+nan, nan
+nan, nan
+-0, 196
+nan, nan
+-0, 268
+nan, nan
+18.4349, 327.928
+-0, 149
+-0, 212
+nan, nan
+-0, 346
+18.4349, 304.527
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+-0, 334
+nan, nan
+nan, nan
+-0, 202
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+-0, 265
+nan, nan
+18.4349, 295.673
+-0, 218
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+nan, nan
+fffffffffffffffffffffff
+24, 329
+24, 330
+24, 331
+f_best_line
+24, 330
+                       
+ooooooooooooooooooooooo
+25, 332.232
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+24.9351, 331.884
+21.8014, 335.923
+18.4349, 309.587
+24.444, 331.622
+24.7751, 333.221
+24.444, 333.608
+23.1986, 325.377
+24.7751, 332.593
+23.1986, 323.802
+23.9625, 327.043
+21.8014, 317.539
+23.1986, 328.003
+21.8014, 311.968
+26.5651, 340.777
+24.444, 332.118
+24.444, 329.801
+23.9625, 333.541
+26.5651, 339.435
+24.7751, 332.732
+24.7751, 332.802
+fffffffffffffffffffffff
+25, 332
+25, 333
+f_best_line
+25, 332
+                       
+ooooooooooooooooooooooo
+26, 334.291
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+25.9649, 333.552
+25.9423, 334.564
+25.7693, 335.223
+26.5651, 337.199
+-0, 231
+25.9065, 334.823
+nan, nan
+25.5815, 334.046
+25.8664, 334.186
+fffffffffffffffffffffff
+26, 334
+26, 335
+f_best_line
+26, 334
+                       
+ooooooooooooooooooooooo
+27, 336.249
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+26.9769, 335.978
+27.0956, 336.617
+29.7449, 353.623
+28.0725, 343.235
+27.4076, 338.103
+29.0546, 347.332
+26.5651, 335.857
+27.4744, 336.858
+27.1811, 336.641
+27.2996, 337.447
+fffffffffffffffffffffff
+27, 336
+27, 337
+f_best_line
+27, 336
+                       
+ooooooooooooooooooooooo
+28, 338.105
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+27.9711, 337.376
+28.0187, 338.993
+fffffffffffffffffffffff
+28, 337
+28, 338
+28, 339
+f_best_line
+28, 338
+                       
+ooooooooooooooooooooooo
+29, 339.857
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+29.0351, 340.111
+28.996, 339.366
+26.5651, 339.882
+26.5651, 336.305
+26.5651, 331.832
+26.5651, 328.702
+26.5651, 333.621
+26.5651, 345.249
+fffffffffffffffffffffff
+29, 339
+29, 340
+29, 341
+f_best_line
+29, 340
+                       
+ooooooooooooooooooooooo
+30, 341.506
+ccccccccccccccccccccccc
+30, 343
+PPPPPPPPPPPPPPPPPPPPPPP
+29.9916, 341.243
+fffffffffffffffffffffff
+30, 341
+30, 342
+f_best_line
+30, 342
+                       
+ooooooooooooooooooooooo
+31, 343.051
+ccccccccccccccccccccccc
+30, 342
+PPPPPPPPPPPPPPPPPPPPPPP
+31.0144, 342.815
+31.0144, 343.672
+fffffffffffffffffffffff
+31, 342
+31, 343
+31, 344
+f_best_line
+31, 343
+                       
+ooooooooooooooooooooooo
+32, 344.492
+ccccccccccccccccccccccc
+32, 346
+PPPPPPPPPPPPPPPPPPPPPPP
+32.0157, 345.096
+32.0365, 343.853
+fffffffffffffffffffffff
+32, 344
+32, 345
+f_best_line
+32, 344
+                       
+ooooooooooooooooooooooo
+33, 345.827
+ccccccccccccccccccccccc
+32, 347
+33, 345
+PPPPPPPPPPPPPPPPPPPPPPP
+32.9956, 346.388
+33.0198, 345.161
+fffffffffffffffffffffff
+33, 345
+33, 346
+33, 347
+f_best_line
+33, 346
+                       
+ooooooooooooooooooooooo
+34, 347.058
+ccccccccccccccccccccccc
+33, 346
+34, 346
+PPPPPPPPPPPPPPPPPPPPPPP
+34.0332, 347.231
+34.1597, 346.86
+34.1597, 346.003
+34.0412, 346.738
+fffffffffffffffffffffff
+34, 346
+34, 347
+34, 348
+f_best_line
+34, 347
+                       
+ooooooooooooooooooooooo
+35, 348.182
+ccccccccccccccccccccccc
+34, 349
+PPPPPPPPPPPPPPPPPPPPPPP
+35.0459, 347.944
+35.0229, 348.861
+45, 381.131
+45, 389.616
+45, 383.252
+45, 303.349
+45, 393.858
+45, 404.465
+45, 376.888
+45, 309.713
+45, 391.737
+45, 400.222
+45, 345.068
+45, 313.955
+45, 364.16
+45, 370.524
+45, 368.403
+45, 349.311
+fffffffffffffffffffffff
+35, 347
+35, 348
+35, 349
+f_best_line
+35, 348
+                       
+ooooooooooooooooooooooo
+36, 349.201
+ccccccccccccccccccccccc
+36, 348
+PPPPPPPPPPPPPPPPPPPPPPP
+35.959, 348.867
+36.0137, 349.435
+fffffffffffffffffffffff
+36, 348
+36, 349
+36, 350
+f_best_line
+36, 349
+                       
+ooooooooooooooooooooooo
+37, 350.113
+ccccccccccccccccccccccc
+37, 349
+PPPPPPPPPPPPPPPPPPPPPPP
+36.9983, 349.81
+37.6942, 349.388
+37.1083, 350.808
+37.0355, 349.443
+37.5686, 349.425
+38.1572, 347.272
+37.1467, 351.3
+fffffffffffffffffffffff
+37, 349
+37, 350
+37, 351
+f_best_line
+37, 350
+                       
+ooooooooooooooooooooooo
+38, 350.918
+ccccccccccccccccccccccc
+37, 350
+PPPPPPPPPPPPPPPPPPPPPPP
+38.0099, 351.405
+38.6598, 353.421
+45, 369.11
+38.0208, 350.565
+45, 352.846
+45, 330.926
+45, 373.352
+45, 321.026
+45, 323.855
+45, 337.997
+45, 388.202
+45, 360.624
+45, 328.805
+45, 328.098
+fffffffffffffffffffffff
+38, 350
+38, 351
+38, 352
+f_best_line
+38, 351
+                       
+ooooooooooooooooooooooo
+39, 351.617
+ccccccccccccccccccccccc
+39, 351
+39, 353
+PPPPPPPPPPPPPPPPPPPPPPP
+38.9943, 352.075
+45, 341.533
+38.991, 351.13
+39.0493, 351.641
+fffffffffffffffffffffff
+39, 351
+39, 352
+f_best_line
+39, 352
+                       
+ooooooooooooooooooooooo
+40, 352.208
+ccccccccccccccccccccccc
+40, 351
+39, 354
+PPPPPPPPPPPPPPPPPPPPPPP
+40.0195, 351.514
+40.2058, 352.225
+39.9575, 352.662
+fffffffffffffffffffffff
+40, 351
+40, 352
+40, 353
+f_best_line
+40, 352
+                       
+ooooooooooooooooooooooo
+41, 352.692
+ccccccccccccccccccccccc
+41, 352
+41, 354
+PPPPPPPPPPPPPPPPPPPPPPP
+41.0148, 353.125
+41.0148, 352.37
+fffffffffffffffffffffff
+41, 352
+41, 353
+f_best_line
+41, 353
+                       
+ooooooooooooooooooooooo
+42, 353.069
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+41.9809, 353.1
+45, 367.696
+45, 340.825
+45, 354.26
+45, 355.675
+42.022, 353.443
+45, 352.846
+45, 339.411
+45, 359.917
+45, 351.432
+45, 349.311
+45, 343.654
+45, 368.403
+45, 357.796
+45, 363.453
+45, 346.482
+45, 352.139
+45, 347.897
+45, 361.332
+45, 364.867
+45, 347.189
+45, 344.361
+45, 362.746
+45, 350.018
+45, 356.382
+45, 340.825
+fffffffffffffffffffffff
+42, 352
+42, 353
+42, 354
+f_best_line
+42, 353
+                       
+ooooooooooooooooooooooo
+43, 353.338
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+42.98, 353.359
+45, 354.968
+45, 365.574
+45, 357.089
+45, 359.21
+45, 357.796
+45, 352.139
+45, 362.746
+45, 342.24
+fffffffffffffffffffffff
+43, 353
+43, 354
+f_best_line
+43, 353
+                       
+ooooooooooooooooooooooo
+44, 353.5
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+44.0072, 353.153
+44.0052, 353.86
+45, 353.553
+45, 352.846
+fffffffffffffffffffffff
+45, 349
+45, 351
+44, 353
+44, 354
+45, 354
+45, 356
+f_best_line
+44, 353
+                       
+ooooooooooooooooooooooo
+45, 353.553
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+45, 353.553
+45, 352.846
+fffffffffffffffffffffff
+45, 353
+45, 354
+f_best_line
+45, 354
+                       
+ooooooooooooooooooooooo
+46, 353.5
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+46.0523, 353.507
+45, 348.604
+45, 347.189
+45, 353.553
+45, 347.189
+45, 354.968
+45, 352.139
+45, 357.796
+45, 352.139
+45, 357.089
+45, 347.897
+fffffffffffffffffffffff
+45, 349
+45, 351
+46, 353
+45, 354
+46, 354
+45, 356
+f_best_line
+46, 353
+                       
+ooooooooooooooooooooooo
+47, 353.338
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+47.02, 352.627
+47.02, 354.09
+fffffffffffffffffffffff
+47, 353
+47, 354
+f_best_line
+47, 353
+                       
+ooooooooooooooooooooooo
+48, 353.069
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+48.0191, 352.357
+47.9557, 353.491
+fffffffffffffffffffffff
+48, 352
+48, 353
+48, 354
+f_best_line
+48, 353
+                       
+ooooooooooooooooooooooo
+49, 352.692
+ccccccccccccccccccccccc
+48, 352
+48, 354
+PPPPPPPPPPPPPPPPPPPPPPP
+49.0507, 352.72
+45, 337.29
+48.0128, 349.571
+45, 352.846
+45, 368.403
+45, 365.574
+48.0128, 357.45
+49.0856, 351.748
+48.0128, 346.97
+45, 347.189
+48.0128, 354.997
+45, 355.675
+48.0128, 348.01
+45, 333.047
+45, 349.311
+45, 347.189
+fffffffffffffffffffffff
+49, 352
+49, 353
+f_best_line
+49, 353
+                       
+ooooooooooooooooooooooo
+50, 352.208
+ccccccccccccccccccccccc
+49, 351
+50, 354
+PPPPPPPPPPPPPPPPPPPPPPP
+49.9805, 351.514
+45, 328.805
+50.027, 352.758
+fffffffffffffffffffffff
+50, 351
+50, 352
+50, 353
+f_best_line
+50, 352
+                       
+ooooooooooooooooooooooo
+51, 351.617
+ccccccccccccccccccccccc
+50, 351
+50, 353
+PPPPPPPPPPPPPPPPPPPPPPP
+51.0057, 351.298
+51.0057, 352.075
+fffffffffffffffffffffff
+51, 351
+51, 352
+f_best_line
+51, 352
+                       
+ooooooooooooooooooooooo
+52, 350.918
+ccccccccccccccccccccccc
+51, 352
+52, 350
+PPPPPPPPPPPPPPPPPPPPPPP
+51.9901, 350.618
+51.9566, 350.286
+45, 357.796
+52.3058, 350.935
+50.1944, 355.686
+45, 323.148
+45, 372.645
+51.5819, 349.845
+45, 336.583
+51.8182, 352.48
+fffffffffffffffffffffff
+52, 350
+52, 351
+52, 352
+f_best_line
+52, 351
+                       
+ooooooooooooooooooooooo
+53, 350.113
+ccccccccccccccccccccccc
+52, 349
+PPPPPPPPPPPPPPPPPPPPPPP
+53.0017, 350.609
+52.9645, 349.443
+fffffffffffffffffffffff
+53, 349
+53, 350
+53, 351
+f_best_line
+53, 350
+                       
+ooooooooooooooooooooooo
+54, 349.201
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+53.9658, 349.344
+53.1301, 352.6
+53.9306, 349.746
+53.1301, 350.8
+54.1623, 349.898
+53.1301, 352.2
+45, 347.189
+53.1301, 349.4
+53.1301, 350.4
+53.1301, 348.2
+53.1301, 351.6
+53.1301, 349.2
+53.1301, 350.6
+53.1301, 355
+53.1301, 352.8
+54.0276, 349.853
+53.1301, 349.8
+53.1301, 344.8
+fffffffffffffffffffffff
+54, 348
+54, 349
+54, 350
+f_best_line
+54, 349
+                       
+ooooooooooooooooooooooo
+55, 348.182
+ccccccccccccccccccccccc
+55, 349
+PPPPPPPPPPPPPPPPPPPPPPP
+55.0311, 348.272
+55.0311, 347.452
+fffffffffffffffffffffff
+55, 347
+55, 348
+55, 349
+f_best_line
+55, 348
+                       
+ooooooooooooooooooooooo
+56, 347.058
+ccccccccccccccccccccccc
+56, 346
+55, 346
+PPPPPPPPPPPPPPPPPPPPPPP
+55.9668, 347.231
+55.6197, 348.627
+56.3099, 345.856
+55.9807, 346.417
+55.9541, 348.052
+55.9541, 347.895
+56.0082, 346.571
+55.9807, 347.743
+55.8403, 347.244
+54.4623, 343.396
+55.7131, 349.306
+fffffffffffffffffffffff
+56, 346
+56, 347
+56, 348
+f_best_line
+56, 347
+                       
+ooooooooooooooooooooooo
+57, 345.827
+ccccccccccccccccccccccc
+57, 347
+56, 345
+PPPPPPPPPPPPPPPPPPPPPPP
+57.0044, 346.388
+57.2648, 343.742
+57.0048, 345.551
+fffffffffffffffffffffff
+57, 345
+57, 346
+57, 347
+f_best_line
+57, 346
+                       
+ooooooooooooooooooooooo
+58, 344.492
+ccccccccccccccccccccccc
+57, 346
+PPPPPPPPPPPPPPPPPPPPPPP
+58.0153, 344.046
+57.9843, 345.096
+fffffffffffffffffffffff
+58, 344
+58, 345
+f_best_line
+58, 344
+                       
+ooooooooooooooooooooooo
+59, 343.051
+ccccccccccccccccccccccc
+59, 342
+PPPPPPPPPPPPPPPPPPPPPPP
+58.9856, 342.815
+58.9856, 343.672
+fffffffffffffffffffffff
+59, 342
+59, 343
+59, 344
+f_best_line
+59, 343
+                       
+ooooooooooooooooooooooo
+60, 341.506
+ccccccccccccccccccccccc
+59, 343
+PPPPPPPPPPPPPPPPPPPPPPP
+60.0084, 342.109
+59.9951, 340.831
+fffffffffffffffffffffff
+60, 341
+60, 342
+f_best_line
+60, 342
+                       
+ooooooooooooooooooooooo
+61, 339.857
+ccccccccccccccccccccccc
+60, 341
+61, 341
+PPPPPPPPPPPPPPPPPPPPPPP
+61.0527, 340.401
+60.9649, 339.237
+fffffffffffffffffffffff
+61, 339
+61, 340
+61, 341
+f_best_line
+61, 340
+                       
+ooooooooooooooooooooooo
+62, 338.105
+ccccccccccccccccccccccc
+62, 337
+PPPPPPPPPPPPPPPPPPPPPPP
+61.9394, 337.979
+61.9394, 338.861
+63.4349, 338.988
+62.4027, 335.678
+62.6501, 335.777
+62.6501, 336.788
+62.6501, 335.164
+fffffffffffffffffffffff
+62, 337
+62, 338
+62, 339
+f_best_line
+62, 338
+                       
+ooooooooooooooooooooooo
+63, 336.249
+ccccccccccccccccccccccc
+63, 335
+PPPPPPPPPPPPPPPPPPPPPPP
+63.0231, 335.978
+63.0231, 336.87
+fffffffffffffffffffffff
+63, 336
+63, 337
+f_best_line
+63, 336
+                       
+ooooooooooooooooooooooo
+64, 334.291
+ccccccccccccccccccccccc
+64, 333
+PPPPPPPPPPPPPPPPPPPPPPP
+63.9424, 334.187
+63.9899, 334.761
+fffffffffffffffffffffff
+64, 334
+64, 335
+f_best_line
+64, 334
+                       
+ooooooooooooooooooooooo
+65, 332.232
+ccccccccccccccccccccccc
+65, 331
+PPPPPPPPPPPPPPPPPPPPPPP
+64.9705, 332.535
+64.8626, 333.182
+fffffffffffffffffffffff
+65, 332
+65, 333
+f_best_line
+65, 332
+                       
+ooooooooooooooooooooooo
+66, 330.071
+ccccccccccccccccccccccc
+66, 329
+66, 331
+PPPPPPPPPPPPPPPPPPPPPPP
+66.0162, 329.831
+66.0162, 330.745
+fffffffffffffffffffffff
+66, 329
+66, 330
+66, 331
+f_best_line
+66, 330
+                       
+ooooooooooooooooooooooo
+67, 327.809
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+66.9818, 328.576
+66.9818, 327.656
+fffffffffffffffffffffff
+67, 327
+67, 328
+67, 329
+f_best_line
+67, 328
+                       
+ooooooooooooooooooooooo
+68, 325.448
+ccccccccccccccccccccccc
+67, 327
+67, 325
+68, 324
+PPPPPPPPPPPPPPPPPPPPPPP
+67.9614, 325.353
+67.751, 326.718
+67.9196, 326.577
+fffffffffffffffffffffff
+68, 325
+68, 326
+f_best_line
+68, 325
+                       
+ooooooooooooooooooooooo
+69, 322.987
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+69.0549, 323.137
+69.0549, 322.204
+fffffffffffffffffffffff
+69, 322
+69, 323
+69, 324
+f_best_line
+69, 323
+                       
+ooooooooooooooooooooooo
+70, 320.428
+ccccccccccccccccccccccc
+69, 322
+69, 320
+70, 319
+PPPPPPPPPPPPPPPPPPPPPPP
+70.063, 319.623
+69.9118, 321.194
+70.0261, 320.488
+fffffffffffffffffffffff
+70, 320
+70, 321
+f_best_line
+70, 320
+                       
+ooooooooooooooooooooooo
+71, 317.772
+ccccccccccccccccccccccc
+71, 316
+PPPPPPPPPPPPPPPPPPPPPPP
+70.9815, 317.659
+71.0135, 317.1
+fffffffffffffffffffffff
+71, 317
+71, 318
+f_best_line
+71, 318
+                       
+ooooooooooooooooooooooo
+72, 315.018
+ccccccccccccccccccccccc
+71, 317
+PPPPPPPPPPPPPPPPPPPPPPP
+72.014, 314.825
+72.0506, 314.247
+fffffffffffffffffffffff
+72, 314
+72, 315
+72, 316
+f_best_line
+72, 315
+                       
+ooooooooooooooooooooooo
+73, 312.169
+ccccccccccccccccccccccc
+72, 314
+PPPPPPPPPPPPPPPPPPPPPPP
+73.0588, 311.853
+73.3008, 311.006
+73.3008, 310.719
+75.9638, 296.136
+73.3008, 311.581
+74.0546, 312.083
+75.9638, 308.505
+74.0546, 306.451
+75.9638, 296.621
+75.9638, 316.994
+73.3008, 310.144
+75.9638, 306.565
+fffffffffffffffffffffff
+73, 311
+73, 312
+73, 313
+f_best_line
+73, 312
+                       
+ooooooooooooooooooooooo
+74, 309.225
+ccccccccccccccccccccccc
+73, 309
+73, 311
+PPPPPPPPPPPPPPPPPPPPPPP
+74.0091, 309.54
+fffffffffffffffffffffff
+74, 309
+74, 310
+f_best_line
+74, 309
+                       
+ooooooooooooooooooooooo
+75, 306.186
+ccccccccccccccccccccccc
+74, 308
+PPPPPPPPPPPPPPPPPPPPPPP
+74.9686, 306.153
+75.9638, 302.684
+75.0513, 306.741
+90, 309
+90, 298
+90, 186
+90, 245
+fffffffffffffffffffffff
+75, 305
+75, 306
+75, 307
+f_best_line
+75, 306
+                       
+ooooooooooooooooooooooo
+76, 303.054
+ccccccccccccccccccccccc
+75, 305
+76, 301
+PPPPPPPPPPPPPPPPPPPPPPP
+75.9367, 303.619
+76.1028, 302.127
+fffffffffffffffffffffff
+76, 302
+76, 303
+76, 304
+f_best_line
+76, 303
+                       
+ooooooooooooooooooooooo
+77, 299.83
+ccccccccccccccccccccccc
+76, 300
+77, 298
+76, 302
+PPPPPPPPPPPPPPPPPPPPPPP
+76.9132, 300.001
+90, 221
+78.6901, 289.664
+90, 254
+90, 257
+78.6901, 299.469
+78.6901, 288.095
+80.5377, 303.152
+78.6901, 290.056
+fffffffffffffffffffffff
+77, 299
+77, 300
+77, 301
+f_best_line
+77, 300
+                       
+ooooooooooooooooooooooo
+78, 296.515
+ccccccccccccccccccccccc
+78, 295
+78, 297
+PPPPPPPPPPPPPPPPPPPPPPP
+77.9838, 296.361
+79.6952, 286.306
+90, 235
+90, 297
+78.2066, 295.808
+77.9322, 297.127
+fffffffffffffffffffffff
+78, 296
+78, 297
+f_best_line
+78, 297
+                       
+ooooooooooooooooooooooo
+79, 293.109
+ccccccccccccccccccccccc
+79, 293
+78, 295
+PPPPPPPPPPPPPPPPPPPPPPP
+78.9995, 293.506
+90, 214
+90, 271
+79.0987, 292.622
+fffffffffffffffffffffff
+79, 292
+79, 293
+79, 294
+f_best_line
+79, 293
+                       
+ooooooooooooooooooooooo
+80, 289.614
+ccccccccccccccccccccccc
+79, 290
+80, 290
+PPPPPPPPPPPPPPPPPPPPPPP
+82.875, 271.016
+79.9986, 289.532
+81.8699, 275.772
+81.8699, 276.337
+82.875, 283.791
+81.8699, 277.186
+90, 287
+79.8994, 290.532
+fffffffffffffffffffffff
+80, 289
+80, 290
+f_best_line
+80, 290
+                       
+ooooooooooooooooooooooo
+81, 286.031
+ccccccccccccccccccccccc
+80, 288
+81, 284
+PPPPPPPPPPPPPPPPPPPPPPP
+81.0038, 286.433
+90, 210
+90, 221
+90, 215
+90, 262
+90, 254
+90, 220
+90, 264
+90, 225
+90, 271
+90, 227
+90, 260
+90, 263
+90, 228
+90, 279
+90, 237
+90, 247
+84.2894, 286.969
+90, 214
+90, 240
+90, 261
+90, 218
+90, 284
+90, 211
+90, 281
+90, 242
+90, 229
+fffffffffffffffffffffff
+81, 285
+81, 286
+81, 287
+f_best_line
+81, 286
+                       
+ooooooooooooooooooooooo
+82, 282.36
+ccccccccccccccccccccccc
+81, 282
+PPPPPPPPPPPPPPPPPPPPPPP
+82.0146, 282.237
+81.9988, 283.216
+fffffffffffffffffffffff
+82, 282
+82, 283
+f_best_line
+82, 282
+                       
+ooooooooooooooooooooooo
+83, 278.604
+ccccccccccccccccccccccc
+82, 279
+83, 279
+PPPPPPPPPPPPPPPPPPPPPPP
+84.2894, 275.327
+90, 256
+82.9922, 278.245
+90, 221
+90, 228
+82.9508, 278.876
+fffffffffffffffffffffff
+83, 278
+83, 279
+f_best_line
+83, 279
+                       
+ooooooooooooooooooooooo
+84, 274.763
+ccccccccccccccccccccccc
+83, 275
+83, 277
+PPPPPPPPPPPPPPPPPPPPPPP
+83.9372, 275.451
+86.4237, 263.86
+83.8767, 274.425
+fffffffffffffffffffffff
+84, 274
+84, 275
+f_best_line
+84, 275
+                       
+ooooooooooooooooooooooo
+85, 270.838
+ccccccccccccccccccccccc
+84.5, 273
+85.5, 268
+84, 273
+PPPPPPPPPPPPPPPPPPPPPPP
+84.9609, 270.949
+90, 231
+90, 257
+90, 229
+90, 251
+90, 259
+fffffffffffffffffffffff
+85, 270
+85, 271
+85, 272
+f_best_line
+85, 271
+                       
+ooooooooooooooooooooooo
+86, 266.83
+ccccccccccccccccccccccc
+85.5, 269
+86.5, 264
+85, 269
+PPPPPPPPPPPPPPPPPPPPPPP
+85.9878, 267.343
+90, 259
+90, 262
+90, 253
+90, 245
+90, 236
+90, 250
+90, 246
+90, 234
+90, 251
+90, 234
+90, 255
+90, 257
+90, 246
+90, 242
+90, 256
+fffffffffffffffffffffff
+86, 266
+86, 267
+86, 268
+f_best_line
+86, 267
+                       
+ooooooooooooooooooooooo
+87, 262.741
+ccccccccccccccccccccccc
+86.5, 263.5
+87, 263
+PPPPPPPPPPPPPPPPPPPPPPP
+87.0173, 262.644
+90, 258
+90, 262
+90, 251
+90, 241
+90, 242
+90, 254
+90, 249
+90, 255
+90, 247
+90, 252
+fffffffffffffffffffffff
+87, 262
+87, 263
+f_best_line
+87, 263
+                       
+ooooooooooooooooooooooo
+88, 258.573
+ccccccccccccccccccccccc
+PPPPPPPPPPPPPPPPPPPPPPP
+88.0488, 258.85
+90, 254
+90, 246
+90, 250
+87.9399, 258.782
+90, 254
+88.1118, 257.344
+fffffffffffffffffffffff
+88, 258
+88, 259
+f_best_line
+88, 259
+                       
+ooooooooooooooooooooooo
+89, 254.325
+ccccccccccccccccccccccc
+89, 254
+89, 254.5
+PPPPPPPPPPPPPPPPPPPPPPP
+90, 251
+88.9667, 254.959
+90, 253
+88.9258, 254.312
+fffffffffffffffffffffff
+89, 254
+89, 255
+f_best_line
+89, 254
