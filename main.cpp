@@ -13,8 +13,6 @@ void printHelp(std::string program_name);
 
 int main(int argc, char *argv[])
 {
-    // start timing
-    auto t1 = std::chrono::high_resolution_clock::now();
     if (argc < 3)
     {
         printHelp(argv[0]);
@@ -109,10 +107,6 @@ int main(int argc, char *argv[])
     //                          config["HoughLine_params"]["d_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params_contours"].as<int>(),
     //                          config["HoughLine_params"]["min_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["max_theta"].as<double>() / 180 * CV_PI);
 
-    // end timing
-    auto t2 = std::chrono::high_resolution_clock::now();
-    auto dt_in_ms1 = std::chrono::duration<double>(t2 - t1).count() * 1000;
-    std::cout << "Total time: " << dt_in_ms1 << std::endl;
 
     //#############################################################################################################################################################
     //######################################################## drawing and display ################################################################################

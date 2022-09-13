@@ -29,7 +29,6 @@ int main(int argc, char *argv[])
 
     cv::cvtColor(imCrop, imCrop_gray, cv::COLOR_BGR2GRAY);
 
-    auto t1 = std::chrono::high_resolution_clock::now();
 
     int flag = config["flag"].as<int>();
 
@@ -58,10 +57,6 @@ int main(int argc, char *argv[])
                              config["HoughLine_params"]["min_theta"].as<double>(), config["HoughLine_params"]["max_theta"].as<double>());
     }
 
-    // end timing
-    auto t2 = std::chrono::high_resolution_clock::now();
-    auto dt_in_ms1 = std::chrono::duration<double>(t2 - t1).count() * 1000;
-    std::cout << "Total time: " << dt_in_ms1 << std::endl;
 
     //#############################################################################################################################################################
     //######################################################## drawing and display ################################################################################
