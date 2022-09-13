@@ -34,8 +34,8 @@ int main(int argc, char *argv[])
     auto t1 = std::chrono::high_resolution_clock::now();
 
     std::vector<cv::Vec2d> OUT_lines;
-    cv::Vec2d OUT_max_line;
-    features::HoughLines(edge_image, OUT_lines, OUT_max_line, config["HoughLine_params"]["d_rho"].as<double>(),
+    cv::Vec2d OUT_best_line;
+    features::HoughLines(edge_image, OUT_lines, OUT_best_line, config["HoughLine_params"]["d_rho"].as<double>(),
                          config["HoughLine_params"]["d_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["threshold"].as<int>(),
                          config["HoughLine_params"]["min_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["max_theta"].as<double>() / 180 * CV_PI);
 
@@ -49,10 +49,10 @@ int main(int argc, char *argv[])
         cv::line(image, features::polarLine2cartPoints(params[0], params[1])[0], features::polarLine2cartPoints(params[0], params[1])[1],
                  cv::Scalar(255, 0, 0), 2);
     }
-    cv::line(image, features::polarLine2cartPoints(OUT_max_line[0], OUT_max_line[1])[0], features::polarLine2cartPoints(OUT_max_line[0], OUT_max_line[1])[1],
+    cv::line(image, features::polarLine2cartPoints(OUT_best_line[0], OUT_best_line[1])[0], features::polarLine2cartPoints(OUT_best_line[0], OUT_best_line[1])[1],
              cv::Scalar(0, 0, 255), 2);
-    std::cout << "Line_from_edges of highest votes (red): { rho: " << OUT_max_line[0] << " theta: "
-              << OUT_max_line[1] << " }" << std::endl;
+    std::cout << "Line_from_edges of highest votes (red): { rho: " << OUT_best_line[0] << " theta: "
+              << OUT_best_line[1] << " }" << std::endl;
 
     cv::imshow("lines_from_edges", image);
     cv::waitKey(0);

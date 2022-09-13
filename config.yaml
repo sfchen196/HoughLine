@@ -17,3 +17,8 @@ HoughLine_params_edges: 100 # threshold for hough_line() function call using edg
 HoughLine_params_contours: 100 # threshold for hough_line() function call using contour as input
 
 
+HoughLine_params: 
+  d_rho: 1          # 1 pixel
+  d_theta: 1        # in degrees, not in radians
+  min_theta: 0      # in degrees, not in radian
+  max_theta: 180    # in degrees, not in radian

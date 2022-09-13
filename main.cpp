@@ -88,15 +88,26 @@ int main(int argc, char *argv[])
     /* 4. apply hough line algorithm on both the contour and the edge image
 */
     std::vector<cv::Vec2d> lines_from_edges;
-    cv::Vec2d max_line_from_edges;
+    // std::vector<cv::Vec2f> lines_from_edges;
+    cv::Vec2d best_line_from_edges;
 
-    // features::HoughLines(edge_image, lines_from_edges, max_line_from_edges, 1, CV_PI / 180, config["HoughLine_params_edges"].as<int>(), -1/5*CV_PI, 1/5*CV_PI);
-
-    features::HoughLines(edge_image, lines_from_edges, max_line_from_edges, 1, CV_PI / 180, config["HoughLine_params_edges"].as<int>(), -0.6 * CV_PI, -0.4 * CV_PI);
+    // features::HoughLines(edge_image, lines_from_edges, best_line_from_edges, 1, CV_PI / 180, config["HoughLine_params_edges"].as<int>(), -0.6 * CV_PI, -0.4 * CV_PI);
+    features::HoughLines(edge_image, lines_from_edges, best_line_from_edges, config["HoughLine_params"]["d_rho"].as<double>(),
+                             config["HoughLine_params"]["d_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params_edges"].as<int>(),
+                             config["HoughLine_params"]["min_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["max_theta"].as<double>() / 180 * CV_PI);
+    // cv::HoughLines(edge_image, lines_from_edges, config["HoughLine_params"]["d_rho"].as<double>(),
+    //                          config["HoughLine_params"]["d_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params_edges"].as<int>(),
+    //                          config["HoughLine_params"]["min_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["max_theta"].as<double>() / 180 * CV_PI);
 
     std::vector<cv::Vec2d> lines_from_contours;
-    cv::Vec2d max_line_from_contours;
-    features::HoughLines(contours[0], lines_from_contours, max_line_from_contours, 1, CV_PI / 180, config["HoughLine_params_contours"].as<int>(), -0.5 * CV_PI, 0.5 * CV_PI);
+    // std::vector<cv::Vec2f> lines_from_contours;
+    cv::Vec2d best_line_from_contours;
+    features::HoughLines(contours[0], lines_from_contours, best_line_from_contours, config["HoughLine_params"]["d_rho"].as<double>(),
+                             config["HoughLine_params"]["d_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params_contours"].as<int>(),
+                             config["HoughLine_params"]["min_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["max_theta"].as<double>() / 180 * CV_PI);
+    // cv::HoughLines(contours[0], lines_from_contours, config["HoughLine_params"]["d_rho"].as<double>(),
+    //                          config["HoughLine_params"]["d_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params_contours"].as<int>(),
+    //                          config["HoughLine_params"]["min_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["max_theta"].as<double>() / 180 * CV_PI);
 
     // end timing
     auto t2 = std::chrono::high_resolution_clock::now();
@@ -134,15 +145,15 @@ int main(int argc, char *argv[])
 
     /* 4.2 draw the line from highest votes
 */
-    std::vector<cv::Point> pts_from_edges = features::reverseROI(roi_topleft, features::polarLine2cartPoints(max_line_from_edges[0], max_line_from_edges[1], distance_factor_btw_pts));
+    std::vector<cv::Point> pts_from_edges = features::polarLine2cartPoints(best_line_from_edges[0], best_line_from_edges[1], distance_factor_btw_pts);
     cv::line(from_edges, pts_from_edges[0], pts_from_edges[1], cv::Scalar(0, 0, 255), 10);
-    std::cout << "Line_from_edges of highest votes (red): { rho: " << max_line_from_edges[0] << " theta: "
-              << max_line_from_edges[1] << " }" << std::endl;
+    std::cout << "Line_from_edges of highest votes (red): { rho: " << best_line_from_edges[0] << " theta: "
+              << best_line_from_edges[1] << " }" << std::endl;
 
-    std::vector<cv::Point> pts_from_contours = features::reverseROI(roi_topleft, features::polarLine2cartPoints(max_line_from_contours[0], max_line_from_contours[1], distance_factor_btw_pts));
+    std::vector<cv::Point> pts_from_contours = features::polarLine2cartPoints(best_line_from_contours[0], best_line_from_contours[1], distance_factor_btw_pts);
     cv::line(from_contours, pts_from_contours[0], pts_from_contours[1], cv::Scalar(0, 0, 255), 10);
-    std::cout << "Line_from_contours of highest votes (red): { rho: " << max_line_from_contours[0] << " theta: "
-              << max_line_from_contours[1] << " }" << std::endl;
+    std::cout << "Line_from_contours of highest votes (red): { rho: " << best_line_from_contours[0] << " theta: "
+              << best_line_from_contours[1] << " }" << std::endl;
 
     // display images
     display("lines_from_edges", from_edges, 0.2, 0.2, 1);
