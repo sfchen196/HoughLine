@@ -32,13 +32,13 @@ int main(int argc, char *argv[])
 
     int flag = config["flag"].as<int>();
 
-    std::vector<cv::Vec2d> lines_from_edges;
-    cv::Vec2d best_line_from_edges;
+    std::vector<cv::Vec2d> OUT_lines;
+    cv::Vec2d OUT_best_line;
 
     if (flag)
     {
         cv::Canny(imCrop_gray, edge_image, config["Canny_params"][0].as<double>(), config["Canny_params"][0].as<double>());
-        features::HoughLines(edge_image, lines_from_edges, best_line_from_edges, config["HoughLine_params"]["d_rho"].as<double>(),
+        features::HoughLines(edge_image, OUT_lines, OUT_best_line, config["HoughLine_params"]["d_rho"].as<double>(),
                              config["HoughLine_params"]["d_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["threshold"].as<int>(),
                              config["HoughLine_params"]["min_theta"].as<double>() / 180 * CV_PI, config["HoughLine_params"]["max_theta"].as<double>() / 180 * CV_PI);
     }
@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
                               contours[0].begin(), contours[0].end(), [=](const cv::Point &pt)
                               { return pt.x > largest_x - 5 || pt.y > largest_y - 5 || pt.x < 5 || pt.y < 5; }),
                           contours[0].end());
-        features::HoughLines(contours[0], lines_from_edges, best_line_from_edges, config["HoughLine_params"]["d_rho"].as<double>(),
+        features::HoughLines(contours[0], OUT_lines, OUT_best_line, config["HoughLine_params"]["d_rho"].as<double>(),
                              config["HoughLine_params"]["d_theta"].as<double>(), config["HoughLine_params"]["threshold"].as<int>(),
                              config["HoughLine_params"]["min_theta"].as<double>(), config["HoughLine_params"]["max_theta"].as<double>());
     }
@@ -62,12 +62,12 @@ int main(int argc, char *argv[])
     //######################################################## drawing and display ################################################################################
     //#############################################################################################################################################################
 
-    cv::Mat from_edges;
-    image.copyTo(from_edges);
-    drawLines(from_edges, lines_from_edges, best_line_from_edges, config);
+    cv::Mat img_lines;
+    image.copyTo(img_lines);
+    drawLines(img_lines, OUT_lines, OUT_best_line, config);
 
     // display images
-    display("lines_from_edges", from_edges, 0.2, 0.2, 0);
+    display("OUT_lines", img_lines, 0.2, 0.2, 0);
 
     cv::destroyAllWindows();
 }
@@ -121,8 +121,8 @@ void drawLines(cv::Mat img, std::vector<cv::Vec2d> lines, cv::Vec2d best_line, Y
 
     /* 4.2 draw the line from highest votes
 */
-    std::vector<cv::Point> pts_from_edges = features::reverseROI(roi_topleft, features::polarLine2cartPoints(best_line[0], best_line[1], distance_factor_btw_pts));
-    cv::line(img, pts_from_edges[0], pts_from_edges[1], cv::Scalar(0, 0, 255), 10);
-    std::cout << "Line_from_edges of highest votes (red): { rho: " << best_line[0] << " theta: "
+    std::vector<cv::Point> pts = features::reverseROI(roi_topleft, features::polarLine2cartPoints(best_line[0], best_line[1], distance_factor_btw_pts));
+    cv::line(img, pts[0], pts[1], cv::Scalar(0, 0, 255), 10);
+    std::cout << "Line of highest votes (red): { rho: " << best_line[0] << " theta: "
               << best_line[1] << " }" << std::endl;
 }

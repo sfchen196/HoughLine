@@ -5,7 +5,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS On)
 
 
 # Locate GTest
-find_package(GTest REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(OpenMP REQUIRED)
 
@@ -22,4 +21,4 @@ target_link_libraries(hough_lines PRIVATE utils)
 
 
 add_executable(compare compare.cpp)
-target_link_libraries(compare PUBLIC ${OpenCV_LIBS} hough_lines yaml-cpp ${GTEST_LIBRARIES} pthread)
+target_link_libraries(compare PUBLIC ${OpenCV_LIBS} hough_lines yaml-cpp)
