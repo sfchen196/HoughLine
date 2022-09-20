@@ -35,6 +35,14 @@ namespace features
 
     /**
      * @brief
+     * @param pt1       – A point on the line
+     * @param pt2       – Another point on the line
+     * @return          – A 2-element vector of double, rho and theta of the line, respectively
+     **/
+    auto cartPoints2polarLine(cv::Point pt1, cv::Point pt2) -> cv::Vec2d;
+
+    /**
+     * @brief
      * @param roi_topleft   – The point at the top left corner of the roi
      * @param points        – A vector of points with respect to the roi
      * @return              – The same vector of points with respect to the whole image

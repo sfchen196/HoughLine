@@ -51,6 +51,14 @@ namespace features
         return std::vector<cv::Point>{p1, p2};
     }
 
+
+    auto cartPoints2polarLine(cv::Point pt1, cv::Point pt2) -> cv::Vec2d
+    {
+        double theta = -1 * atan((pt1.x - pt2.x) / (pt1.y - pt2.y));
+        double rho = pt1.y * sin(theta) + pt1.x * cos(theta);
+        return cv::Vec2d{rho, theta};
+    }
+
     auto reverseROI(const cv::Point &roi_topleft, const std::vector<cv::Point> &points) -> std::vector<cv::Point>
     {
         std::vector<cv::Point> pts = std::vector<cv::Point>(points);
