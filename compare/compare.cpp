@@ -73,10 +73,10 @@ int main(int argc, char **argv)
         cv::Vec2d best_line;
 
         auto t1 = std::chrono::high_resolution_clock::now();
-        cv::HoughLines(img_gray, lines_from_cv, 1, CV_PI / 180, config["threshold_cv"].as<int>(), theta - CV_PI / 180, theta + CV_PI / 180);
+        cv::HoughLines(img_gray, lines_from_cv, 1, CV_PI / 180, config["threshold_cv"].as<int>(), 0, 0, theta - CV_PI / 180, theta + CV_PI / 180);
         auto t2 = std::chrono::high_resolution_clock::now();
         
-        cv::HoughLinesP(img_gray, lines_from_cvP, 1, CV_PI / 180, config["threshold_cvP"].as<int>(), theta - CV_PI / 180, theta + CV_PI / 180);
+        cv::HoughLinesP(img_gray, lines_from_cvP, 1, CV_PI / 180, config["threshold_cvP"].as<int>());
         auto t3 = std::chrono::high_resolution_clock::now();
 
         features::HoughLines(img_gray, lines_from_feat, best_line, 1, CV_PI / 180, config["threshold_feat"].as<int>(), theta - CV_PI / 180, theta + CV_PI / 180);

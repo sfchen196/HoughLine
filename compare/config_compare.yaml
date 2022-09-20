@@ -1,7 +1,5 @@
 img_size: 500
-rho: 100 # in pixels
-theta: 45 # in degrees, not radians
 tolerance: 1
-threshold_cv: 30
+threshold_cv: 150
 threshold_cvP: 150
 threshold_feat: 150
