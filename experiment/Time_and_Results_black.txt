@@ -1,0 +1,71 @@
+opencv version: 4.6.0-dev
+Major version: 4
+Minor version: 6
+Subminor version: 0
+
+--------------------------------------------------------------------------------------------
+image location: ../cap_images/black_cap_0.bmp
+radius: 120
+
+preprocessing time: 20.9397
+circle binarization time: 0.307749
+HoughCircle: 8.34346
+mask and hist equalization: 3.98341
+line binarization time: 0.137704
+HoughLine: 2.79627
+Total time: 36.5083
+--------------------------------------------------------------------------------------------
+image location: ../cap_images/black_cap_1.bmp
+radius: 122
+
+preprocessing time: 36.4395
+circle binarization time: 0.093099
+HoughCircle: 4.65107
+mask and hist equalization: 10.6909
+line binarization time: 0.088626
+HoughLine: 2.31308
+Total time: 54.2763
+--------------------------------------------------------------------------------------------
+image location: ../cap_images/black_cap_2.bmp
+radius: 123
+
+preprocessing time: 23.7795
+circle binarization time: 0.0675
+HoughCircle: 5.41415
+mask and hist equalization: 5.41113
+line binarization time: 0.104495
+HoughLine: 2.94035
+Total time: 37.7172
+--------------------------------------------------------------------------------------------
+image location: ../cap_images/black_cap_3.bmp
+radius: 121
+
+preprocessing time: 26.154
+circle binarization time: 0.150763
+HoughCircle: 4.14665
+mask and hist equalization: 7.34849
+line binarization time: 0.244716
+HoughLine: 4.27852
+Total time: 42.3231
+--------------------------------------------------------------------------------------------
+image location: ../cap_images/black_cap_4.bmp
+radius: 121
+
+preprocessing time: 27.4297
+circle binarization time: 0.067448
+HoughCircle: 5.41946
+mask and hist equalization: 7.63252
+line binarization time: 0.155988
+HoughLine: 3.30853
+Total time: 44.0136
+--------------------------------------------------------------------------------------------
+image location: ../cap_images/black_cap_5.bmp
+radius: 123
+
+preprocessing time: 29.7688
+circle binarization time: 0.069078
+HoughCircle: 7.03552
+mask and hist equalization: 5.24977
+line binarization time: 0.128746
+HoughLine: 3.74856
+Total time: 46.0005

@@ -1,0 +1,27 @@
+roi: [1100, 700, 900, 700]
+# roi : [553, 576, 400, 500]
+bg_color: 0                # 1 for white, 0 for black
+useMask: false             # "true" for using mask and applying histEqualization, "false" for hardcoding ONE threshold 
+
+useEdges: true             # "true" for using edges, "false" for using contours
+
+Gaussian_params: 7  # filter size
+Threshold_params: 
+  - 60             # threshold
+  # - 75             # threshold
+  - 255             # maxval
+Canny_params:
+  - 80              # lower bound
+  - 200             # upper bound
+
+
+HoughLine_params: 
+  d_rho: 1          # 1 pixel
+  d_theta: 1        # in degrees, not in radians
+  threshold: 60    # threshold for HoughLine() function call 
+  min_theta: 0      # in degrees, not in radians  
+  max_theta: 180    # in degrees, not in radians
+
+
+drawLinesInCrop: true    # "true" for drawing lines without converting back to original image, "false" for otherwise
+drawBestLineOnly: true

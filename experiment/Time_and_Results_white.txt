@@ -1,0 +1,60 @@
+opencv version: 4.6.0-dev
+Major version: 4
+Minor version: 6
+Subminor version: 0
+
+--------------------------------------------------------------------------------------------
+image location: ../cap_images/white_cap_0.bmp
+radius: 121
+
+preprocessing time: 12.8005
+circle binarization time: 0.113825
+HoughCircle: 9.45874
+mask and hist equalization: 3.59352
+line binarization time: 0.154244
+HoughLine: 4.18939
+Total time: 30.3103
+--------------------------------------------------------------------------------------------
+image location: ../cap_images/white_cap_1.bmp
+radius: 138
+
+preprocessing time: 18.181
+circle binarization time: 0.066981
+HoughCircle: 9.81077
+mask and hist equalization: 7.50278
+line binarization time: 0.089384
+HoughLine: 3.97349
+Total time: 39.6244
+--------------------------------------------------------------------------------------------
+image location: ../cap_images/white_cap_2.bmp
+radius: 122
+
+preprocessing time: 16.5443
+circle binarization time: 0.150346
+HoughCircle: 6.48311
+mask and hist equalization: 6.14938
+line binarization time: 0.143326
+HoughLine: 5.00147
+Total time: 34.4719
+--------------------------------------------------------------------------------------------
+image location: ../cap_images/white_cap_3.bmp
+radius: 124
+
+preprocessing time: 11.6324
+circle binarization time: 0.322375
+HoughCircle: 7.12889
+mask and hist equalization: 4.80833
+line binarization time: 0.118433
+HoughLine: 6.6791
+Total time: 30.6895
+--------------------------------------------------------------------------------------------
+image location: ../cap_images/white_cap_4.bmp
+radius: 122
+
+preprocessing time: 7.29564
+circle binarization time: 0.067148
+HoughCircle: 5.35188
+mask and hist equalization: 8.25857
+line binarization time: 0.123273
+HoughLine: 4.16549
+Total time: 25.262

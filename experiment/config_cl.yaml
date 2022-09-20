@@ -1,0 +1,47 @@
+bg_color: 0               # 1 for white, 0 for black
+roi: [1100, 700, 700, 550]   # roi for black bg
+# roi: [1050, 650, 600, 550]     # roi for white bg
+
+useDynamicThreshold: false
+whichHoughLine: 1       # 0 for cv::HoughLines, 1 for cv::HoughLinesP, 2 for features::HoughLines 
+
+Threshold_params_circle:
+  - 58             # threshold for black bg
+  - 150             # threshold for white bg
+  - 255             # maxvalj
+
+Threshold_params_line:  
+  - 90               # threshold for black bg
+  # - 40               # threshold for black bg
+  - 40               # threshold for white bg
+  - 255              # maxval
+
+HoughCircle_params: 
+  dp: 2          # 1 pixel
+  minDist: 700        # in degrees, not in radians
+  param1: 100    # threshold for HoughLine() function call 
+  param2: 30      # in degrees, not in radians  
+  minRadius: 120    # in degrees, not in radians
+  maxRadius: 140    # in degrees, not in radians
+
+HoughLine_params: 
+  d_rho: 1          # 1 pixel
+  d_theta: 1        # in degrees, not in radians
+  threshold: 60    # threshold for HoughLine() function call 
+  min_theta: 0      # in degrees, not in radians  
+  max_theta: 180    # in degrees, not in radians
+
+HoughLineP_params: 
+  d_rho: 1          # 1 pixel
+  d_theta: 1        # in degrees, not in radians
+  threshold: 60    # threshold for HoughLine() function call 
+  minLineLength: 170      # line length lower than this will be rejected  
+  maxLineGap: 700   # max allowed gap between points on the line to link them
+
+Gaussian_params: 7  # filter size
+Canny_params:
+  - 80              # lower bound
+  - 200             # upper bound
+
+drawLinesInCrop: true    # "true" for drawing lines without converting back to original image, "false" for otherwise
+drawBestLineOnly: false
